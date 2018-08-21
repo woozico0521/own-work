@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>成语接龙</title>
+	<style>
+	span{font-size: 12px;}
+	</style>
+</head>
+<body>
+	<h2>成语接龙</h2>
+	<div>
+		<input type="text" id="cy" />
+		<button id="btn">添加成语</button>
+		<span id="ts"></span>
+	</div>
+	<div id="msg"></div>
+<script>
+	var oCy=document.getElementById("cy");
+	var oBtn=document.getElementById("btn");
+	var oMsg=document.getElementById("msg");
+	var oTs=document.getElementById("ts");
+
+	oBtn.onclick=function(){
+		if (oCy.value=="") {
+			oTs.innerText="*不能为空!";
+			oTs.style.color="#f00";
+		}else if(oCy.value.length!=4){
+			oTs.innerText="请输入四字成语!"
+			oTs.style.color="#f00";
+			oCy.value="";
+		}else{
+			oMsg.innerText+=oCy.value+",";
+			oTs.innerText="*添加成功!";
+			oTs.style.color="#0f0";
+			oCy.value="";
+		}
+		
+
+	}
+</script>
+</body>
+</html>

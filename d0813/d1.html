@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<style>
+	.page{width: 500px;height: 100px;border:1px solid #ccc;margin: 30px auto;padding: 30px 0 0 20px;}
+	.page span{font-size: 12px;margin-left: 20px;}
+	</style>
+</head>
+<body>
+
+	<div class="page">
+		用户名: <input type="text" id="user" onblur="na()" /><span id="n">*请输入用户名</span><br />
+		电&nbsp;&nbsp;&nbsp;话: <input type="text" id="phone" onblur="num()" /><span id="s">*请输入电话</span><br />
+		<button>注册</button>
+	</div>
+<script>
+	var oUser=document.getElementById("user");
+	var oDh=document.getElementById("phone");
+	var oS=document.getElementById("s");
+	var oN=document.getElementById("n");
+	function na(){
+		bool=isNaN(oUser.value);
+		if(oUser.value==""){
+			oN.innerText="*用户名不能为空";
+			oN.style.color="#f00";
+		}else if (bool==false) {
+			oN.innerText="*用户名不能为纯数字!";
+			oN.style.color="#f00";
+		}else{
+			oN.innerText="*点击注册";
+			oN.style.color="#0f0";
+		}
+	}
+	function num(){
+		bool=isNaN(oDh.value);
+		if(oDh.value==""){
+			oS.innerText="*电话不能为空";
+			oS.style.color="#f00";
+		}else if (bool==true) {
+			oS.innerText="*请输入数字";
+			oS.style.color="#f00";
+		}else{
+			oS.innerText="*点击注册";
+			oS.style.color="#0f0";
+		}
+	}
+	
+</script>
+
+</body>
+</html>
