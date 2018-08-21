@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.up{width: 800px;margin: 20px auto;padding:0 100px;}
+	.up .gc{width: 200px;height:270px;float: left;background: #ccc;}
+	.up div img{width: 200px;}
+	.up p{width: 100px;float: left;}
+	.up p img{width: 150px;margin: 70px 100px;}
+	.up .gg{width: 200px;height:270px;float: right;background: #ccc;}
+	.down{width: 1000px;margin: 0 auto;}
+	.down div{width: 1000px;}
+	.down div img{width: 100px;}
+	.btn{width: 1000px;margin: 20px auto;text-align: center;}
+	button{width: 100px;height: 20px; margin:0 auto;}
+	</style>
+</head>
+<body>
+	<div class="up">
+		<div class="gc"><img src="images/pic-1.jpg" id="gc" /></div>
+		<p class="vs"><img src="images/vs.jpg"><p>
+		<div class="gg"><img src="images/pic-2.jpg" id="gg" /></div>
+		
+	</div>
+	<div style="clear: both;"></div>
+	<div class="btn"><button id="btn">重选</button></div>
+	<div class="down">
+		<div class="csmall">
+			<img src="images/pic-1.jpg">
+			<img src="images/pic-2.jpg">
+			<img src="images/pic-3.jpg">
+			<img src="images/pic-4.jpg">
+			<img src="images/pic-5.jpg">
+			<img src="images/pic-6.jpg">
+			<img src="images/pic-7.jpg">
+			<img src="images/pic-8.jpg">
+			<img src="images/pic-9.jpg">
+			<img src="images/pic-10.jpg">
+			<img src="images/pic-11.jpg">
+			<img src="images/pic-12.jpg">
+			<img src="images/pic-13.jpg">
+			<img src="images/pic-14.jpg">
+			<img src="images/pic-15.jpg">
+			<img src="images/pic-16.jpg">
+			<img src="images/pic-17.jpg">
+			<img src="images/pic-18.jpg">
+		</div>
+	</div>
+<script>
+	var oGc=document.getElementById("gc");
+	var oGg=document.getElementById("gg");
+	var oBtn=document.getElementById("btn");
+	var csmall=['pic-1.jpg','pic-2.jpg','pic-3.jpg','pic-4.jpg','pic-5.jpg','pic-6.jpg','pic-7.jpg','pic-8.jpg','pic-9.jpg','pic-10.jpg','pic-11.jpg','pic-12.jpg','pic-13.jpg','pic-14.jpg','pic-15.jpg','pic-16.jpg','pic-17.jpg','pic-18.jpg']
+	var i=0;
+	var a=1;
+	
+	oBtn.onclick=function(){
+		i=parseInt(Math.random()*18);
+		a=parseInt(Math.random()*18);
+		i!=a;
+		oGc.src="images/"+csmall[i];
+		oGg.src="images/"+csmall[a];
+		console.log(i,a);
+	}
+	
+
+	/*oGc.onclick=function(){
+		
+		oGc.src=csmall[i]
+		i++
+		if (i==csmall.length) {
+			i=0;
+		}
+		console.log(i,csmall[i])
+	}
+	oGg.onclick=function(){
+		oGg.src=gsmall[i]
+		i++
+		if (i==gsmall.length) {
+			i=0;
+		}
+		console.log(i,gsmall[i])
+	}*/
+</script>
+</body>
+</html>

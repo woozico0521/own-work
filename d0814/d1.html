@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	双号限行,请输入车牌号:<input type="text" id="input" />
+	<button id="button">查询</button>
+	<h2 id="h2"></h2>
+<script>
+var oInput=document.getElementById("input");
+var oBtn=document.getElementById("button");
+var oH2=document.getElementById("h2");
+
+
+oBtn.onclick=function(){
+	str=parseInt(oInput.value)
+	if (isNaN(oInput.value)==true) {
+		oH2.innerText="请输入纯数字"
+		oH2.style.color="#f00"
+		
+	}else if (str%2==0) {
+		oH2.innerText=oInput.value+"是双号,限行"
+		oH2.style.color="#ff0"
+	}else{
+		oH2.innerText=oInput.value+"是单号,可以通行"
+		oH2.style.color="#0f0"
+	}
+	oInput.value=""
+}
+
+</script>
+</body>
+</html>
