@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body,div,dl,dt,dd,p,span{margin: 0;padding: 0;}
+	#tit{width: 1320px;height: 109px;}
+	#tit .up{width: 1320px;height: 60px;background: #F98320;position: relative;}
+	#tit .up div:first-child{width: 316px;height: 58px;border: 1px solid #F98320;text-shadow: 0px 0px 2px #ccc,1px 0px 2px #ccc,2px 0px 2px #ccc;}
+	#tit .up div:first-child div{width: 54px;height: 26px;margin:15px 0 0 116px;font-size: 24px;color:#fff;text-align: center;line-height: 26px;}
+	#tit .up div:first-child dl{width: 96px;height: 26px;}
+	#tit .up div:first-child dl dt{width: 142px;height: 12px;font-size: 5px;color: #fff;line-height: 12px;position: absolute;left: 174px;top: 18px;}
+	#tit .up div:first-child dl dd{width: 142px;height: 12px;font-size: 5px;color: #fff;line-height: 12px;text-align: center; position: absolute;left: 174px;top: 34px;}
+	#tit .up div:nth-of-type(2) dl{width: 181px;height: 58px;border: 1px solid #F98320;position: absolute;left: 316px;top: 0;text-shadow: 0px 0px 2px #ccc,1px 0px 2px #ccc,2px 0px 2px #ccc;}
+	#tit .up div:nth-of-type(2) dl dt{width: 90px;height: 60px;border-right: 1px solid #F98320;font-size: 14px;color: #fff;line-height: 60px;text-align: center;}
+	#tit .up div:nth-of-type(2) dl dt:hover{width: 90px;height: 58px;background: rgba(0,0,0,0.2);}
+	#tit .up div:nth-of-type(2) dl dd{width: 90px;height: 60px;font-size: 14px;color: #fff;line-height: 60px;text-align: center;position: absolute;left:91px;top: 0;}
+	#tit .up div:nth-of-type(2) dl dd:hover{width: 90px;height: 58px;background: rgba(0,0,0,0.2);}
+	#tit .up div:nth-of-type(3){width: 262px;height: 38px;border: 1px solid #F98320;position: absolute;left: 526px;top: 0; text-shadow: 0px 0px 2px #ccc,1px 0px 2px #ccc,2px 0px 2px #ccc;padding-top: 20px;}
+	#tit .up div:nth-of-type(3) dl{width: 163px; height: 20px; font-size: 12px;color: #fff;line-height: 20px; text-align: center;border: 1px solid #DD6C16;border-radius:2px;/* margin: 0 auto; */}
+	#tit .up div:nth-of-type(3) dl dt,#tit .up div:nth-of-type(3) dl dd{width: 40px;height:20px;text-align: center; float: left;}
+	#tit .up div:nth-of-type(3) dl dt:hover{width: 40px;height: 20px;background: rgba(0,0,0,0.2);}
+	#tit .up div:nth-of-type(3) dl dd{border-left: 1px solid #DD6C16;} 
+	#tit .up div:nth-of-type(3) dl dd:hover{width: 40px;height: 20px;background: rgba(0,0,0,0.2);}
+	#tit .up div:nth-of-type(4) div{width: 240px;height: 28px;border: 1px solid #F98320; position: absolute;left:738px;top: 0;margin-top: 20px;}
+	#tit .up div:nth-of-type(4) div p{width: 21px;height: 20px;float: left;}
+	#tit .up div:nth-of-type(4) div input{width: 219px;height: 18px;float: right;border: 0;}
+	#tit .up div:nth-of-type(5){width: 60px;height: 20px;font-size: 12px;text-align:center;color:#fff;line-height: 20px;text-shadow: 0px 0px 2px #ccc,1px 0px 2px #ccc,2px 0px 2px #ccc; border: 2px solid #B65716;border-radius: 4px; background: #CA671B;position: absolute;left: 998px;top: 20px;}
+	#tit .up div:nth-of-type(5):hover{width: 60px;height: 22px;background: rgba(0,0,0,0.2);}
+	#tit .up div:nth-of-type(6){width: 102px;height: 20px;background: #CA671B;position: absolute;left: 1100px;top: 20px;border:2px solid #B65716;border-radius: 4px; text-shadow: 0px 0px 2px #ccc,1px 0px 2px #ccc,2px 0px 2px #ccc;}
+	#tit .up div:nth-of-type(6) p{font-size: 12px;color:#fff;line-height: 20px;float: left;border-right: 2px solid #B65716;margin: 0 2px;}
+	#tit .up div:nth-of-type(6) .wb{width:20px;height:20px;display:inline-block;line-height: 20px;border-right: 2px solid #B65716;}
+	#tit .up div:nth-of-type(6) p:hover{width: 48px;height: 20px;background: rgba(0,0,0,0.2);}
+	#tit .up div:nth-of-type(6) span:hover img{width: 20px;height: 20px;background: rgba(0,0,0,1);}
+	#tit .down{width: 1320px;height: 30px;background: #fff;position: relative;border-bottom:3px solid #ccc; }
+	#tit .down div:first-child{width: 360px;height: 30px;position: absolute;left: 210px;top: 0;padding: 0 10px;}
+	#tit .down div:first-child dt,#tit .down div:first-child dd{width: 60px;height: 30px;float: left;font-size: 14px;line-height: 30px;text-align: center;}
+	#tit .down div:first-child dt,#tit .down div:first-child dd:last-child{color:#F98320 }
+	#tit .down div:first-child dt:hover,#tit .down div:first-child dd:hover{color: #ccc;}
+	#tit .down div:last-child{width: 350px;height: 30px;position: absolute;right: 105px;top: 0;}
+	#tit .down div:last-child dt,#tit .down div:last-child dd{width: 82px;height: 30px;float: left;margin: 0 auto;font-size: 14px;color: #3C4448;line-height: 30px;}
+	#tit .down div:last-child dd:last-child{width: 100px;height: 30px;}
+	#tit .down div:last-child dt img,#tit .down div:last-child dd img{vertical-align: -4px;}
+	#tit .down div:last-child dt:hover,#tit .down div:last-child dd:hover{width: 82px;height: 30px;background:rgba(0,0,0,0.2)#fff;color: #ccc;}
+	#tit .down div:last-child dd:last-child:hover{width: 100px;height: 30px;background: rgba(0,0,0,0.2) #fff;}
+	</style>
+</head>
+<body>
+	<div id="tit">
+		<div class="up">
+			<div>
+				<div>虾米</div>
+				<dl>
+					<dt>高品质音乐 发现 分享</dt>
+					<dd>xiami.com</dd>
+				</dl>
+			</div>
+			<div>
+				<dl>
+					<dt>发现音乐</dt>
+					<dd>我的音乐</dd>
+				</dl>
+			</div>
+			<div>
+				<dl>
+					<dt>歌单</dt>
+					<dd>电台</dd>
+					<dd>音乐人</dd>
+					<dd>客户端</dd>
+				</dl>
+			</div>
+			<div>
+				<div>
+					<p><img src="images/search.jpg"></p>
+					<input value="音乐搜索,找人..." />
+				</div>
+			</div>
+			<div>
+				免费注册
+			</div>
+			<div>
+				<p>立即登录</p>
+				<span class="wb"><img src="images/weibo.jpg"></span>
+				<span><img src="images/qq.jpg"></span>
+			</div>
+		</div>
+		<div class="down">
+			<div>
+				<dl>
+					<dt>热门</dt>
+					<dd>排行榜</dd>
+					<dd>专辑</dd>
+					<dd>艺人</dd>
+					<dd>风格</dd>
+					<dd>寻光计划</dd>
+				</dl>
+			</div>
+			<div>
+				<dl>
+					<dt>
+						<img src="images/dui.jpg">  
+						<span>兑换码</span>
+					</dt>
+					<dd>
+						<img src="images/vip.jpg">
+						<span>VIP会员</span>
+					</dd>
+					<dd>
+						<img src="images/last.jpg">
+						<span>最近播放</span>
+					</dd>
+					<dd>
+						<img src="images/logo.jpg">
+						<span>虾米客户端</span>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
