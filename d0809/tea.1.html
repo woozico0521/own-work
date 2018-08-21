@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{width: 50px; border:10px ridge #999}
+	div img{width: 50px;}
+	</style>
+</head>
+<body>
+	<div id="pic">
+		<img src="images/01.jpg">
+	</div>
+	input
+<script>
+	var oDiv=document.getElementById("pic");
+	var pic1='<img src="images/01.jpg" />';//true
+	var pic2='<img src="images/02.jpg" />';//flase
+	var bool=true;
+
+
+	//开关原理
+	/*oDiv.onclick=function(){
+		if(bool){//true
+			oDiv.innerHTML=pic2;
+			bool=false;
+		}else{//false
+			oDiv.innerHTML=pic1;
+			bool=true;
+		}
+	}
+*/
+	oDiv.onclick=function(){
+		if(bool){//true
+			oDiv.innerHTML=pic2;
+		}else{//false
+			oDiv.innerHTML=pic1;
+		}
+		bool=!bool;
+	}
+
+		
+</script>
+</body>
+</html>

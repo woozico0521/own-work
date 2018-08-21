@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div,footer,img,button,input{margin: 0;padding: 0;}
+	.phone{width: 375px;height: 657px;background: #ccc;padding-top:10px;margin: 0 auto;}
+	.phone .con{width: 370px;height: 600px;background: #fff;overflow: auto;margin: 0 auto;}
+	.phone footer{width: 370px;height: 30px;margin: 0 auto;}
+	.phone footer .peo{width: 30px;height: 30px;overflow: hidden;border: 1px;}
+	img{width: 30px;height: 30px;}
+	.phone footer .peo img{width: 30px;height: 30px;}
+	.phone footer input{width: 250px;height: 30px;border: 1px;}
+	.phone footer .send{width: 40px;height: 30px;border: 1px;}
+	</style>
+</head>
+<body>
+	<div class="phone">
+		<div id="con" class="con">
+		</div>
+		<footer>
+			<button class="peo" id="people"><img id="da" src="images/01.jpg"><img src="images/02.jpg"></button>
+			<input id="input" type="text" />
+			<button class="send" id="send">发送</button>
+		</footer>
+	</div>
+<script>
+	var oPeople=document.getElementById("people");
+	var oInput=document.getElementById("input");
+	var oSend=document.getElementById("send");
+	var oMsg=document.getElementById("con");
+	var oImg=document.getElementsByTagName("img");
+	var oDa=document.getElementById("da");
+	
+	oSend.onclick=function(){
+		oMsg.innerHTML+=oDa.outerHTML+oInput.value+"<br />"
+	}
+	oDa.onclick =function(){
+        if(this.src.search("images/01.jpg") != -1) {
+               this.src ="images/02.jpg";
+        } else {
+               this.src ="images/01.jpg";
+        }
+        
+    }
+	
+	
+	
+		
+	
+
+	
+	
+	
+
+</script>
+</body>
+</html>

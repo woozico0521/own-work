@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#pic{width: 30px; border:1px ridge #999}
+	img{width: 30px;}
+	.con{width: 200px;height: 200px;border: 1px solid #000;overflow: auto;}
+	.fl{ float:left}
+	.fr{ float:right}
+	.clearfix:after{
+	   content:".";/*加一段内容*/
+	   display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+	   height:0;/*避免生成的内容破坏原有布局高度*/
+	   clear:both;/*清除浮动*/
+	   visibility:hidden;/*让生成的内容不可见*/
+	  }
+	 .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
+	</style>
+</head>
+<body>
+	<div class="con" id="con">
+		<!-- <p><img src="images/01.jpg"><span> hello</span></p>
+		<p style="float: right;"><span> hello</span><img src="images/02.jpg"></p> -->
+	</div>
+
+
+	<div id="pic">
+		<img src="images/01.jpg">
+	</div>
+	<input type="text" id="msg" />
+	<button id="btn">发送</button>
+
+
+
+<script>
+	var oCon=document.getElementById("con");//显示留言信息
+	var oMsg=document.getElementById("msg");//用户输入的留言
+	var oBtn=document.getElementById("btn");
+	var oDiv=document.getElementById("pic");//头像容器
+	var pic1='<img src="images/01.jpg" />';//true 头像1
+	var pic2='<img src="images/02.jpg" />';//flase 头像2
+	var bool=true;
+
+	
+
+
+	//开关原理:选择头像
+	/*oDiv.onclick=function(){
+		if(bool){//true
+			oDiv.innerHTML=pic2;
+			bool=false;
+		}else{//false
+			oDiv.innerHTML=pic1;
+			bool=true;
+		}
+	}
+*/
+	oDiv.onclick=function(){
+		if(bool){//true
+			oDiv.innerHTML=pic2;
+		}else{//false
+			oDiv.innerHTML=pic1;
+		}
+		bool=!bool;
+	}
+	oBtn.onclick=function(){
+		if(bool){//true 头像1
+			oCon.innerHTML+='<p>'+pic1+'<span>'+oMsg.value+'</span>'+'</p>'+'<br/>';
+		}else{//false 头像2
+			oCon.innerHTML+='<p style="float:right">'+'<span>'+oMsg.value+'</span>'+pic2+'</p>'+'<br/>';
+		}
+		
+	}
+		
+</script>
+</body>
+</html>
