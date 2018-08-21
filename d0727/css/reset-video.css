@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,li,p,h1,h2,h3,h4,h5,h6{ margin:0; padding:0}
+body{ font-size:12px; line-height:1.7em; color:#666;}
+ul{ list-style:none}
+img{ border:none}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:underline;}
+.fl{ float:left}
+.fr{ float:right}
+.clear{ clear:both; overflow:hidden; height:0}
+.center{ width:1200px; margin:0 auto;}
+a:hover img {
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	transition: all .2s linear;
+}
+.clearfix:after{
+   content:".";/*加一段内容*/
+   display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+   height:0;/*避免生成的内容破坏原有布局高度*/
+   clear:both;/*清除浮动*/
+   visibility:hidden;/*让生成的内容不可见*/
+  }
+ .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
+
+
+
+/* header */
+ .center header{width: 1200px;height: 110px;position: fixed;top: 0;z-index: 100;background: #fff;}
+ .center header div{width: 100%;height: 100%;position: relative;}
+ .center header .up,.center header .down{width:490px;height: 110px; }
+ .center header li{width:104px; margin:42px auto;line-height: 26px;padding-left: 26px;}
+ .center header li:first-child{margin-left: 52px;}
+ .center header .up li:first-child{background: url(../images/header-index1.jpg) no-repeat center left;}
+ .center header .up li:nth-of-type(2){background: url(../images/header-shop.jpg) no-repeat center left;}
+ .center header .up li:nth-of-type(3){background: url(../images/header-play.jpg) no-repeat center left;}
+ .center header .logo{width: 166px;margin:18px auto; position: absolute;left: 517px;top: 0;}
+ .center header .down{position: absolute;right: 0;top: 0;} 
+ .center header .down li:nth-of-type(1){background: url(../images/header-video1.jpg) no-repeat center left;}
+ .center header .down li:nth-of-type(2){background: url(../images/header-digital.jpg) no-repeat center left;}
+ .center header .down li:nth-of-type(3){background: url(../images/header-english.jpg) no-repeat center left;}
+
+
+
+
+/* banner */
+ .center .banner{width: 1200px;height: 504px; background: url(../images/banner.jpg);position: relative;margin-top: 110px;}
+ .center .banner li:first-child{width: 130px;height: 40px;background: url(../images/1.png) no-repeat center left;font-size: 20px;padding-left: 35px;border-bottom: 2px solid #ccc;position: absolute;left:100px;top:200px;line-height: 40px;}
+ .center .banner li:nth-of-type(2){width: 130px;height: 30px;background: url(../images/banner-play.png) no-repeat;position: absolute;left: 100px;top:240px;font-size: 20px;padding-left:35px;margin-top: 15px;border-bottom: 2px solid #ccc;}
+
+/* main */
+ .center main .title{width: 100%;font-size: 30px;color:#000;font-weight: bold;text-align: center;margin-top: 40px;}
+ .center main .averanges{width: 600px;height: 600px;margin-top: 40px;background: url(../images/main-spider.jpg) no-repeat;position: relative;}
+ .center main .averanges div,{width:100%;height: 80px;color: #fff;position: absolute;bottom: 0;text-align: center;}
+ .center main .averanges div h4,{color: #fff;font-size: 20px;}
+ .center main ul{margin-top: 40px;}
+
+ .center main .love{width: 600px;height: 600px;margin-top: 40px;background: url(../images/main-lovedisney.jpg) no-repeat;position: relative;}
+ .center main .love div{width:70%;height: 100px;color: #fff;position: absolute;bottom: 0;margin:40px;}
+ .center main .love div h4{color: #fff;font-size: 20px;margin-bottom: 10px;}
+
+ .center main div:last-child .tv{margin-top: 40px;}
+ .center main div:last-child .news{width: 598px;height: 95px;margin: 0;padding: 0;border: 1px solid #ccc;position: relative;background: url(../images/main-next.jpg) no-repeat center right;background-position: 500px 40px;}
+ .center main div:last-child .news p{width: 130px;height: 95px;vertical-align: center;position: absolute;left: 0;top:20px;}
+ .center main div:last-child .news li:first-child{width:470px;height: 60px;line-height:60px;position: absolute;left: 140px;top: 0;font-size: 15px;}
+ .center main div:last-child .news li:last-child{width:470px;height: 20px;line-height: 20px;position: absolute;left: 140px;top:60px;font-size: 12px;}
+ .center main div:last-child .news:hover{background: rgba(0,0,0,0.2);}
+
+
+
+/* fooder */
+ .center .fooder{width: 100%;margin: 0 auto;}
+ .center .fooder div:first-child ul{width:450px;height:100px; margin:80px auto;background: url(../images/fooder-bg.jpg) no-repeat 150px;}
+ .center .fooder div:first-child li{width: 150px;vertical-align: center;text-align: center;font-weight: bold;color: #000;}
+ .center .fooder div:last-child ul{width: 486px;margin: -50px auto;}
+ .center .fooder div:last-child li{width: 90px;text-align: center;color: #000;font-weight: bold;border-top: 2px solid #ccc;padding-top: 20px;}
+ .center .fooder div:last-child .last{width: 486px;margin:20px auto;text-align: center;}
