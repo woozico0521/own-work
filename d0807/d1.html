@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body style="background: #fff; " id="color">
+	请选择:<input type="text" id="bg" />
+	<button id="btn">确定</button>
+<script>
+	var oInput=document.getElementById("bg");
+	var oBtn=document.getElementById("btn");
+	var oColor=document.getElementById("color");
+	var bg=0;
+	oBtn.onclick=function(){
+		bg=oInput.value;
+		if(bg==1){
+			oColor.style.background="#0f0";
+		}else if(bg==2){
+			oColor.style.background="#00f";
+		}else if(bg==3){
+			oColor.style.background="#f00";
+		}else{
+			oColor.style.background="#ccc";
+		}
+
+		console.log(bg);
+	}
+
+	
+
+</script>
+</body>
+</html>
