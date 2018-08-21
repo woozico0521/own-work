@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- d2.html作业 -->
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	ul,li{margin: 0;padding: 0;}
+	li{list-style: none;}
+	#big img{width: 400px;border:1px solid #000;}
+	#small img{width: 90px;float: left;border:1px solid #000;margin-left: 5px;}
+	</style>
+</head>
+<body>
+	<div>
+		<div id="big"><img src="images/01.jpg" id="da"></div>
+		<ul id="small">
+			<li><img src="images/01.jpg"></li>
+			<li><img src="images/02.jpg"></li>
+			<li><img src="images/03.jpg"></li>
+			<li><img src="images/04.jpg"></li>
+		</ul>
+	</div>
+<script>
+	var oDa=document.getElementById("da");//大图
+	var oImg=document.getElementsByTagName("img");//所有图片
+	
+
+	oImg[1].onclick=function(){
+		oDa.src=oImg[1].src;
+	}
+	oImg[2].onclick=function(){
+		oDa.src=oImg[2].src;
+	}
+	oImg[3].onclick=function(){
+		oDa.src=oImg[3].src;
+	}
+	oImg[4].onclick=function(){
+		oDa.src=oImg[4].src;
+	}
+</script>
+</body>
+</html>

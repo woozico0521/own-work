@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div,ul,li{margin: 0;padding: 0;}
+	#up{width: 400px;height: 500px;border: 5px solid #ccc;}
+	#down{width: 400px;height: 130px;border: 5px solid #ccc;}
+	li{width: 98px;height: 122px;list-style: none;float: left;border:  1px solid #000;}
+	img{width: 100%;}
+	</style>
+</head>
+<body>
+	<div id="up"></div>
+	<div id="down">
+		<ul>
+			<li id="d1"><img src="images/01.jpg"></li>
+			<li id="d2"><img src="images/02.jpg"></li>
+			<li id="d3"><img src="images/03.jpg"></li>
+			<li id="d4"><img src="images/04.jpg"></li>
+		</ul>
+	</div>
+<script>
+	var oUp=document.getElementById("up");
+	var oDown=document.getElementById("down");
+	var oD1=document.getElementById("d1");
+	var oD2=document.getElementById("d2");
+	var oD3=document.getElementById("d3");
+	var oD4=document.getElementById("d4");
+
+	oD1.onclick=function(){
+		oUp.innerHTML=oD1.innerHTML;
+	}	
+	oD2.onclick=function(){
+		oUp.innerHTML=oD2.innerHTML;
+	}
+	oD3.onclick=function(){
+		oUp.innerHTML=oD3.innerHTML;
+	}
+	oD4.onclick=function(){
+		oUp.innerHTML=oD4.innerHTML;
+	}
+</script>
+</body>
+</html>
