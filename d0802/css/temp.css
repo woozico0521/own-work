@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{ margin:0; padding:0}
+body{ font-size:12px; line-height:1.7em; color:#666;}
+ul{ list-style:none}
+img{ border:none}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+.fl{ float:left}
+.fr{ float:right}
+.clear{ clear:both; overflow:hidden; height:0}
+.center{ width:1000px; margin:0 auto;}
+a:hover img {
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	transition: all .2s linear;
+}
+.clearfix:after{
+   content:".";/*加一段内容*/
+   display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+   height:0;/*避免生成的内容破坏原有布局高度*/
+   clear:both;/*清除浮动*/
+   visibility:hidden;/*让生成的内容不可见*/
+  }
+ .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
+
+
+/* header */
+header{width: 100%;height: 50px;background: #F1761C;box-shadow: 0 1px 1px 1px #666;position: fixed;}
+header ul{width: 92%;height: 50px;padding:0 3% 0 3%;}
+header li{width: 12%;height: 50px;vertical-align: middle;float: left;margin-top:4px;}
+header li:nth-child(2){width: 76%;height: 50px;margin: 0 auto;text-align: center;}
+header li:nth-child(2) a{line-height: 50px;color: #fff;font-size: 2rem;text-shadow: 0 2px #ccc;}
+
+/* main */
+main{width: 100%;background: #EDEDED;}
+main div:first-child{box-shadow: 0 1px 1px 1px #ccc;}
+main div dl{width: 98%;height: 90px;padding-top: 60px;}
+main dl dt{width: 30%;float: left;margin-left: 2%;}
+main dl dt img{width: 100%;}
+main dl dd{width: 60%;height:50%;float: right;}
+main div dl dd:nth-child(2){height:40%;font-size: 1.3rem;padding-top:2%;color: #55534F;font-weight: bold;}
+main div dl dd:nth-child(3){color: #7B766F;}
+
+main div:nth-child(2){width:100%;padding: 5px 0;}
+main ul li{width: 45%;float: left;padding-left: 5%;}
+main ul li img{width: 8%;}
+
+main div:nth-child(3){width: 100%;}
+main div:nth-child(3) li{width: 30%;padding-left: 2%;}
+main div:nth-child(3) li img{width: 100%}
+
+main div:nth-child(4){width: 96%;height: 200px;background: #fff;margin: 0 auto;box-shadow: 0 0 1px 1px #ccc;border-radius: 5px;}
+main div:nth-child(4) div:first-child{width: 100%;height: 60%;margin:2% 0 0 2%;box-shadow: none;padding-top: 2%;}
+main div:nth-child(4) h4{width:98%;font-size: 1.3rem;color: #5F5D5A;padding-bottom: 4%;border-bottom: 1px dashed #ccc;}
+main div:nth-child(4) p{width: 94%;padding:3% 0 0 2%;}
+main div:nth-child(4) div:first-child{width: 100%;height: 30%;margin:2% 0 0 2%;box-shadow: none;}
+main div:nth-child(4) dt{width: 100%;height: 30%;font-size: 1.3rem;color: #5F5D5A;border-bottom: 1px dashed #ccc;margin-top:2%; }
+main div:nth-child(4) div:last-child dl dd{width: 20%;float: left;font-size: 0.7rem;margin-left: 4%;padding-top:2%;font-weight: normal;}
+main div:nth-child(4) div:last-child dl dd a{color: #5161C3;}
+main div:nth-child(4) div:last-child dl dd:hover a{color:#C53131; }
+main div:nth-child(5) div:first-child{width: 20%;box-shadow: none;margin-left: -45%;padding-top: 2%}
+main div:nth-child(5) div:first-child img{width: 100%;}
+main div:nth-child(5) div:last-child{width: 70%;height: 100px;box-shadow: 0 0 1px 1px #ccc;margin-right: 2%;background: #fff;border-radius: 5px;padding:2% 2%;}
+main div:nth-child(5) div:last-child span:first-child{font-size: 1.1rem;color: #00030A;font-weight: bold;}
+main div:nth-child(5) div:last-child p{font-size: 1rem;color: #4D4D4D;}
+main div:last-child ul{width: 100%;height: 50px;margin: 10px 0;}
+main div:last-child li{width: 25%;background: #F07A23;border: 1px solid #F07A23;border-radius: 5px;margin-left: 2%;}
+main div:last-child li a{font-size: 0.9rem;text-align: center;color: #fff;padding-left: 6%;}
+
+
+/* footer */
+footer{width: 100%;height: 50px;background: #353535;position: fixed;bottom: 0;}
+footer li{width: 21%;float: left;background: url(../images/footer-line.jpg)no-repeat right;overflow: hidden;padding-left: 4%;margin-top: 2px;}
+footer li:last-child{background: none;}
+footer li img{width: 70%;margin-top: 5px;}
