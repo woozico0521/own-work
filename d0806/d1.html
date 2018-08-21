@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	<input type="text" id="inp" />
+	<select id="select">
+		<option value="哈尔滨">哈尔滨</option>
+		<option value="济州岛">济州岛</option>
+		<option value="上海">上海</option>
+	</select>
+	<button id="btn">按钮</button> 
+	<p id="p1"></p>
+	<script>
+		var oInput=document.getElementById("inp");
+		var oSelect=document.getElementById("select");
+		var oButton=document.getElementById("btn");
+		var op1=document.getElementById("p1");
+		oButton.onclick=function(){
+			op1.innerHTML=oInput.value+"在"+oSelect.value;
+		}
+
+
+	</script>
+</body>
+</html>
