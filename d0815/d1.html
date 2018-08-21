@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	header{width: 800px;height: 300px;margin:0 auto;}
+	header img{width: 800px;}
+	main{width: 300px;height: 200px;margin:0 auto;text-align: center;}
+	button{margin-top:20px;}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<img id="img" src="images/vip1.jpg" />
+	</header>
+	<main>
+		<p>注册:</p>
+		用户名:<input type="text" id="user" onblur="na()" /><br />
+		<span id="userwarn"></span><br />
+		电话号:<input type="text" id="tel" onblur="te()" /><br />
+		<span id="telwarn"></span><br />
+		密&nbsp;&nbsp;&nbsp;码:<input type="password" id="pwd" onblur="pw()" /><br />
+		<span id="pwdwarn"></span><br />
+		<button>确定</button>
+	</main>
+<script>
+var oHeader=document.getElementById("header");
+var oImg=document.getElementById("img");
+var oUser=document.getElementById("user");
+var oTel=document.getElementById("tel");
+var oPwd=document.getElementById("pwd");
+var oUserwarn=document.getElementById("userwarn");
+var oTelwarn=document.getElementById("telwarn");
+var oPwdwarn=document.getElementById("pwdwarn");
+pic=['vip1.jpg','vip2.jpg','vip3.jpg','vip4.jpg']
+var i=0;
+setInterval(function(){
+	oImg.src="images/"+pic[i];
+	i++;	
+	if(i==pic.length){
+		i=0;
+	}
+},1000)
+function na(){
+	bool=isNaN(oUser.value)
+	if(bool==true){
+		oUserwarn.innerText="√";
+		oUserwarn.style.color="#0f0";
+	}else if(oUser.value==""){
+		oUserwarn.innerText="用户名不能为空!";
+		oUserwarn.style.color="#f00";
+	}else{
+		oUserwarn.innerText="用户名不能为纯数字!";
+		oUserwarn.style.color="#f00";
+		oUser.value="";
+	}
+}
+function te(){
+	bool=isNaN(oTel.value)
+	if(oTel.value.length==11 && bool==false){
+		oTelwarn.innerText="√";
+		oTelwarn.style.color="#0f0";
+	}else if(oTel.value==""){
+		oTelwarn.innerText="用户名不能为空!";
+		oTelwarn.style.color="#f00";
+	}else if(bool==true){
+		oTelwarn.innerText="用户名只能为纯数字!";
+		oTelwarn.style.color="#f00";
+		oTel.value="";
+	}else{
+		oTelwarn.innerText="请输入11位手机号!";
+		oTelwarn.style.color="#f00";
+		oTel.value="";
+	}
+}
+function pw(){
+	if(oPwd.value==""){
+		oPwdwarn.innerText="密码不能为空!";
+		oPwdwarn.style.color="#f00";
+	}else if(oPwd.value.length<8){
+		oPwdwarn.innerText="密码不能小于8位!";
+		oPwdwarn.style.color="#f00";
+		oPwd.value="";
+	}else{
+		oPwdwarn.innerText="√";
+		oPwdwarn.style.color="#0f0";
+	}
+}
+</script>
+</body>
+</html>
