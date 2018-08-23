@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+请输入数字:<input type="text" id="input"/>
+<button id="btn">确定</button>
+<h1 id="h1"></h1>
+<script>
+var oInput=document.getElementById("input");
+var oBtn=document.getElementById("btn");
+var oH1=document.getElementById("h1");
+var bool=true;
+
+oBtn.onclick=function(){
+    week=parseInt(oInput.value);
+    switch(week){
+        case 0:
+        oH1.innerHTML="星期日";
+        break;
+        case 1:
+        oH1.innerHTML="星期一";
+        break;
+        case 2:
+        oH1.innerHTML="星期二";
+        break;
+        case 3:
+        oH1.innerHTML="星期三";
+        break;
+        case 4:
+        oH1.innerHTML="星期四";
+        break;
+        case 5:
+        oH1.innerHTML="星期五";
+        break;
+        case 6:
+        oH1.innerHTML="星期六";
+        break;
+        default:
+        oH1.innerHTML="请输入0~6之间的数字";
+    }
+    oInput.value="";
+}
+</script>
+</body>
+</html>
