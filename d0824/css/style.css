@@ -1,0 +1,27 @@
+
+
+*{margin:0;padding: 0;}
+li{list-style: none;}
+img{border:none;}
+#one{width: 410px;margin:50px auto;position: relative;}
+#one li{width: 80px;height: 30px;border: 1px solid #ccc;list-style: none;text-align: center;line-height: 30px;float: left;}
+#one .up{width: 410px;margin-top:5px;position: absolute;top: 40px;left: 0;}
+#one .up #imgs{width: 410px; display: none;}
+
+#one .up img{width: 410px;display: none;}
+#one .arrows div{width: 40px;height: 40px;font:25px/40px '黑体';background: rgba(0,0,0,.5);color: #fff;cursor: pointer;text-align: center;}
+#one .arrows #left{float: left;position: absolute;left: 0;top:120px;}
+#one .arrows #right{float: right;position: absolute;right: 0;top:120px;}
+/* #one .down{width: 410px;text-align: left;margin:10px;position: absolute;left: 0;top:250px;} */
+#one .down dl{width: 410px;text-align: left;margin:10px;position: absolute;left: 0;top:250px;display: none;}
+#one .down i{width: 20px;height: 20px;background: url(../images/ico-1.png) no-repeat;background-position: 0 -278px;display: inline-block;vertical-align: middle;}
+#one .down a{color: #666;font-weight: normal;text-decoration: none;}
+#one .down a:hover{color: #00f;text-decoration: underline;}
+
+
+
+#one .on{font-weight: bold; color: #f00; border-bottom:3px solid #00f;}
+#one .on .up #imgs.play{display: block;}
+#one .on .down dl.no{display: block;}
+#one .on .up img.pic{display: block;}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    *{margin:0;padding: 0;cursor: pointer;}
+    li{list-style: none;}
+    ul{width: 150px;margin:50px auto;border:1px solid #000;text-align: center;}
+    dl{font:18px/22px '黑体';}
+    dt{background: #ccc;border:1px solid #000;margin:-1px;margin-bottom: 0;}
+    dd{background: #fff;font:14px/20px '宋体';display:none;}
+    dd:hover{background: #ddd;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <ul id="big">
+        <li>
+            <dl id="one">
+                <dt id="n1">Fox</dt> 
+                <dd>The Gifted</dd>
+                <dd>Gotham</dd>
+                <dd>Prison Break</dd>
+            </dl> 
+        </li>
+        <li>
+            <dl id="two">
+                <dt id="n2">CBS</dt>
+                <dd>The Big Bang Theory</dd>
+                <dd>Young Sheldon</dd>
+                <dd>Criminal Minds</dd>
+            </dl>
+        </li>
+    </ul>
+    
+<script>
+var oDt1=document.getElementById("n1");
+var oDt2=document.getElementById("n2");
+var oDl1=document.getElementById("one");
+var oDl2=document.getElementById("two");
+var oDd1=oDl1.getElementsByTagName("dd");
+var oDd2=oDl2.getElementsByTagName("dd");
+var bool1=true;
+var bool2=true;
+
+oDt1.onclick=function(){
+    if(bool1==true){
+        for(var i=0;i<oDd1.length;i++){
+        oDd1[i].style.display="block"; 
+        }
+    }else{
+        for(var i=0;i<oDd1.length;i++){
+        oDd1[i].style.display="none"; 
+        }
+    }
+    bool1=!bool1; 
+}
+
+oDt2.onclick=function(){
+    if(bool2==true){
+        for(var i=0;i<oDd2.length;i++){
+        oDd2[i].style.display="block"; 
+        }
+    }else{
+        for(var i=0;i<oDd2.length;i++){
+        oDd2[i].style.display="none"; 
+        } 
+    }
+    bool2=!bool2;
+}
+
+</script> 
+</body>
+</html>
