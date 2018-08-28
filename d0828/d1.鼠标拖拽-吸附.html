@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    #box{width: 100px;height: 100px;background: #f00;position: absolute;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+<script>
+/* 
+    1.块的当前位置:x0,y0
+    2.鼠标的当前位置:x1,y1
+    3.鼠标终点位置:x2,y2
+    4.块的终点位置:x,y
+*/
+var oBox=document.getElementById("box");
+
+oBox.onmousedown=function(e){
+    var e=e||event;
+    //1.块的当前位置:x0,y0
+    var x0=this.offsetLeft;
+    var y0=this.offsetTop;
+    //console.log(this.offsetLeft,this.offsetTop);
+    //2.鼠标的当前位置(起点):x1,y1
+    var x1=e.clientX;
+    var y1=e.clientY;
+    //console.log(e.clientX,e.clientY);
+   
+    document.onmousemove=function(e){
+        var e=e||event;
+        //3.鼠标终点位置:x2,y2
+        var x2=e.clientX;
+        var y2=e.clientY;
+        //console.log(e.clientX,e.clientY);
+        
+        //网页的宽,高
+        var oWidth=oBox.offsetWidth;
+        var disX=document.documentElement.clientWidth-oWidth||document.body.clientWidth-oWidth;
+        var oHeight=oBox.offsetHeight;
+        var disY=document.documentElement.clientHeight-oHeight||document.body.clientHeight-oHeight;
+        console.log(disX,disY)
+
+        //4.块的终点位置:x,y
+        x=x0+(x2-x1);
+        y=y0+(y2-y1);
+        
+        if(x<50) x=0;
+        if(x>disX-50) x=disX;
+        if(y<50) y=0;
+        if(y>disY-50) y=disY;
+
+
+        oBox.style.left=x+"px";
+        oBox.style.top=y+"px";
+        console.log(x,y);
+        
+    }
+    //结束鼠标拖拽
+    document.onmouseup=function(){
+        document.onmousemove=null;
+    }
+    return false;
+}
+</script>
+</body>
+</html>
