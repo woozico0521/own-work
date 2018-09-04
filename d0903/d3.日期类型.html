@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1></h1>
+<script>
+/* 
+一.自由的:变量,函数();
+二.有属主的(类):属性,方法();
+ */
+
+var oH1=document.getElementsByTagName("h1")[0];
+
+setInterval(function(){
+
+var curr=new Date();//属性后加()叫方法;js中叫函数;
+var year=curr.getFullYear();//年
+var month=curr.getMonth()+1;
+var day=curr.getDate();
+var hour=curr.getHours();
+var minute=curr.getMinutes();
+var second=curr.getSeconds();
+var mini=curr.getMilliseconds();
+var week=curr.getDay();
+
+
+
+hour=hour<10?'0'+hour:hour;
+minute=minute<10?'0'+minute:minute;
+second=second<10?'0'+second:second;
+
+switch(week){
+    case 1:
+    week="一";
+    break;
+    case 2:
+    week="二";
+    break;
+    case 3:
+    week="三";
+    break;
+    case 4:
+    week="四";
+    break;
+    case 5:
+    week="五";
+    break;
+    case 6:
+    week="六";
+    break;
+    default:
+    week="日";
+
+}
+
+
+oH1.innerHTML=year+"年"+month+"月"+day+"日 &nbsp;&nbsp;"+hour+":"+minute+":"+second+" 星期"+week;
+
+    //location.reload();
+},1)
+
+
+
+</script>
+</body>
+</html>
