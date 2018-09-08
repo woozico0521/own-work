@@ -28,7 +28,7 @@ a:hover img {
  .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
 
 /* aside */
-aside{width: 36px;height: 100%;background: #262626; position: fixed;right: 0;}
+aside{width: 36px;height: 100%;background: #262626; position: fixed;right: 0;z-index: 10;}
 aside .up{width: 36px;height: 500px;margin-top: 80px;}
 aside .up div:first-child{width: 36px;height: 52px;position: relative;}
 aside .up div:hover{background: #DF147F;}
@@ -64,7 +64,7 @@ header .up div li:nth-child(8) span{width: 18px;height: 20px;display:inline-bloc
 
 
 
-header .up div li ul{width: 90px;height: 100px;background: #fff;position: absolute;left: 0;top:30px;border: 1px solid #DCDCDC;border-top: none;margin-top: -2px; display: none;}
+header .up div li ul{width: 90px;height: 100px;background: #fff;position: absolute;left: 0;top:30px;border: 1px solid #DCDCDC;border-top: none;margin-top: -2px; display: none;z-index: 10;}
 header .up div li ul li{width: 80px;height: 32px;line-height: 32px;background: #fff;margin : 0;}
 header .up div li:hover{background: #fff;border: 1px solid #DCDCDC;border-bottom: none;}
 header .up div li:hover ul{display: block;}
@@ -73,7 +73,8 @@ header .up div li:hover li a{color: #000;}
 header .up div li:hover li:hover a{color: #F87EBD;}
 header .up div li:hover a{ color: #F87EBD;}
 
-header .up div li:first-child dl{width: 300px;height: 200px;background: #fff;position: absolute;left: 0;top:30px;display: none;border: 1px solid #ccc;margin-top: -2px;}
+/* 请登录二级导航 */
+header .up div li:first-child dl{width: 300px;height: 200px;background: #fff;position: absolute;left: 0;top:30px;display: none;border: 1px solid #ccc;margin-top: -2px;z-index:10;}
 header .up div li:first-child dl dt span{display: inline-block;}
 header .up div li:first-child dl dt span:first-child{width: 40px;height: 40px;background: url(../images/sprites-hash-9b207a41.png)no-repeat;background-position: -160px -140px;margin: 20px 0 0 20px;}
 header .up div li:first-child dl dt span:last-child{width: 200px;height: 30px;border-bottom: 1px dashed #ccc;display: inline-block;margin-left:10px;}
@@ -81,7 +82,9 @@ header .up div li:first-child dl dd{width: 120px;float: left;margin-left: 30px;p
 header .up div li:first-child:hover dl{display: block;}
 header .up div li:first-child:hover dl a{color: #000;}
 header .up div li:first-child:hover dl dt:hover a,header .up div li:first-child:hover dl p:hover a{color: #F87EBD;}
-header .up div li:nth-child(3) div{width: 480px;height: 152px;background: #fff;margin-left:-180px; border: 1px solid #ccc;display: none;}
+
+/* 签到有礼二级导航 */
+header .up div li:nth-child(3) div{width: 480px;height: 152px;background: #fff;margin-left:-180px; border: 1px solid #ccc;display: none;position: relative;z-index: 10;}
 header .up div li:nth-child(3) div .qd{width: 462px;height: 75px;margin: 30px 0;border: 1px solid #fff;}
 header .up div li:nth-child(3) div .qd .day{width: 24px;height: 40px;margin-left:40px;border: none;}
 header .up div li:nth-child(3) div .qd .day p:first-child{width: 24px;height: 16px;background: url(../images/sprites-hash-9b207a41.png)no-repeat;background-position: -164px -184px;}
@@ -112,7 +115,7 @@ header .middle .center div div:last-child span:last-child{width: 25px;height: 15
 
 header .down{width: 100%;height: 40px;background: #F10180;margin: 0;padding: 0;}
 header div
-header .down .center div:first-child ul{width: 500px;height: 40px;background: #ccc;float: left;}
+header .down .center div:first-child ul{width: 500px;height: 40px;background: #ccc;float: left;position: relative;z-index: 5;}
 header .down .center div:first-child ul li{width: 60px;height:40px;float: left;text-align: center;position: relative;}
 header .down div:first-child li ul{width: 540px;height: 230px;background: #fff;box-shadow: 0 1px 1px 1px #ccc;display: none; position: absolute;}
 header .down div:first-child li:hover ul{display: block;}
