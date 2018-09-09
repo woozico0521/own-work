@@ -5,7 +5,7 @@ body{ font-size:12px; line-height:1.7em; color:#666;}
 ul{ list-style:none}
 img{ border:none}
 a{ text-decoration:none; color:#666;}
-a:hover{ text-decoration:underline;}
+a:hover{ text-decoration:none;}
 .fl{ float:left}
 .fr{ float:right}
 .clear{ clear:both; overflow:hidden; height:0}
@@ -57,6 +57,7 @@ aside .up div:nth-child(3):hover p,aside .up div:nth-child(4):hover p,aside .up 
 
 
 /* header */
+header{position: relative;}
 header .up{width:100%;height:30px;background: url(../images/header-up-bg.jpg) repeat-x;}
 header .up select{width: 50px;height: 28px;background: rgba(0,0,0,0);border-style: none;color:#383838; }
 header .up div li{padding-left:10px;width: 80px;height: 28px;float: left;line-height: 28px;background: url(../images/header-up-line.jpg)no-repeat right;position: relative;}
@@ -113,7 +114,8 @@ header .middle .center div div:last-child{width: 90px;height: 25px;background: #
 header .middle .center div div:last-child span:first-child{width: 20px;height: 25px;display: inline-block;background: url(../images/sprites-hash-9b207a41.png)no-repeat;background-position: -89px -200px;vertical-align: -5px;}
 header .middle .center div div:last-child span:last-child{width: 25px;height: 15px;display: inline-block;background: #F00581;border-radius: 10px;text-align: center;color: #fff;line-height: 15px;}
 
-header .down{width: 100%;height: 40px;background: #F10180;margin: 0;padding: 0; position: relative; z-index: 5;}
+header .down{width: 100%;height: 40px;background: #F10180;margin: 0;padding: 0; z-index: 5;position: absolute;}
+header .on{position: fixed;top:0;}
 header div
 header .down .center div:first-child ul{width: 500px;height: 40px;background: #ccc;float: left;}
 header .down .center div:first-child ul li{width: 60px;height:40px;float: left;text-align: center;position: relative;}
@@ -131,7 +133,7 @@ header .down .center div:last-child ul li .yg{width: 20px;height: 32px;display: 
 
 
 /* banner */
-#banner{width: 100%;margin: 0 auto;background: url(../images/15295465616722.jpg)no-repeat top center;overflow: hidden; }
+#banner{width: 100%;margin: 40px auto;background: url(../images/15295465616722.jpg)no-repeat top center;overflow: hidden; }
 #banner .pic div:first-child{width:965px;height: 400px; box-shadow: 0 2px 2px 2px #E8E8E8;margin: 47px auto;}
 #banner .pic div:first-child img{width: 98%;margin: 10px;}
 #banner .pic div:first-child ul{width: 950px;margin: 0 auto;}
@@ -207,9 +209,14 @@ header .down .center div:last-child ul li .yg{width: 20px;height: 32px;display: 
 
 
 /* left-side */
-.content .left-side{width: 80px;height: 500px;border: 1px solid #DCDCDC;border-radius: 3px; background: #fff; position: fixed;z-index: 10;left: 70px;top:100px;}
-.content .left-side li{width: 74px;height:40px;}
-
+.content .left-side{width: 80px;height: 480px;border: 1px solid #DCDCDC;border-radius: 3px; background: #fff; position: absolute;z-index: 10;left: 70px;top: 1200px; padding-top:7px;}
+.content .dis{position:fixed;top:50px;}
+.content .left-side li{width: 74px;height:40px;text-align: center;vertical-align: -5px;line-height: 40px;}
+.content .left-side li i{width: 20px;height: 25px;display: inline-block;}
+.content .left-side li a{font-size: 14px;}
+.content .left-side li:hover a{color: #D7237E;}
+.content .left-side li.on{background: #F10180;}
+.content .left-side li.on a{color: #fff;font-weight: bold;}
 
 
 
