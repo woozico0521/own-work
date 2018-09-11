@@ -28,7 +28,7 @@ a:hover img {
  .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
 
 /* aside */
-aside{width: 36px;height: 100%;background: #262626; position: fixed;right: 0;}
+aside{width: 36px;height: 100%;background: #262626; position: fixed;right: 0;z-index: 7;}
 aside .up{width: 36px;height: 500px;margin-top: 80px;}
 aside .up div:first-child{width: 36px;height: 52px;position: relative;}
 aside .up div:hover{background: #DF147F;}
@@ -113,7 +113,8 @@ header .middle .center div div:last-child{width: 90px;height: 25px;background: #
 header .middle .center div div:last-child span:first-child{width: 20px;height: 25px;display: inline-block;background: url(../images/sprites-hash-9b207a41.png)no-repeat;background-position: -89px -200px;vertical-align: -5px;}
 header .middle .center div div:last-child span:last-child{width: 25px;height: 15px;display: inline-block;background: #F00581;border-radius: 10px;text-align: center;color: #fff;line-height: 15px;}
 
-header .down{width: 100%;height: 40px;background: #F10180;margin: 0;padding: 0;}
+header .down{width: 100%;height: 40px;background: #F10180;margin: 0;padding: 0; z-index: 5;position: absolute;}
+header .on{position: fixed;top:0;}
 header div
 header .down .center div:first-child ul{width: 500px;height: 40px;background: #ccc;float: left;}
 header .down .center div:first-child ul li{width: 60px;height:40px;float: left;text-align: center;position: relative;}
@@ -131,13 +132,15 @@ header .down .center div:last-child ul li .yg{width: 20px;height: 32px;display: 
 
 
 /* banner */
-#banner{width: 100%; background: url(../images/a1-banner.jpg)no-repeat top center;}
-#banner .bg a{width:100%;height: 360px;display: inline-block;}
+#banner #bg{width:100%;height: 360px; margin:40px auto;text-align: center;overflow: hidden;position: relative;}
+#banner #bg img{width: 1920px;position: absolute;left: 50%;margin-left: -960px;display: none;}
+#banner #bg img.on{width: 1920px;position: absolute;left: 50%;margin-left: -960px;display: block;}
+
 #banner .up{width: 100%;height: 200px;margin-top: 20px;}
 #banner .up li{width: 300px;float: left;margin:10px 0 0 20px; }
 #banner .up li img{width: 100%;}
 #banner .line{width: 380px;height: 50px;margin: 0 auto; background: url(../images/sprites-hash-d121d244.png)no-repeat;background-position: 0 0;}
-#banner .down{width: 100%;height: 400px;b;margin-top: 10px;}
+#banner .down{width: 100%;height: 400px;margin-top: 10px;}
 #banner .down dt{width: 246px;margin: 0;float: left;}
 #banner .down dt a{height: 0;}
 #banner .down dt img{width: 100%;margin: 0;}

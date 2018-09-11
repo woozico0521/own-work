@@ -32,7 +32,7 @@ window.addEventListener("scroll",function(e){
                     oLi[j].className="";
                 }
                 oLi[index].className="on";
-                oBg[index].style.background="url(images/"+pic2[index]+")no-repeat 0 5px";
+                oBg[index].style.background="url(images/"+pic1[index]+")no-repeat 0 5px";
                 oBg[index].style.backgroundSize="20px 20px";
             }
         })(i);
@@ -71,6 +71,38 @@ window.addEventListener("scroll",function(e){
     });
 
 })();
+
+
+/* 轮播 */
+var oRoll=document.getElementById("roll");
+var oImg=oRoll.getElementsByTagName("img");
+var oUl=document.getElementById("tag");
+var oLi=oUl.getElementsByTagName("li");
+var oLeft=document.getElementById("left");
+var oRight=document.getElementById("right");
+var now=0;
+function play(){
+    for(var i=0;i<oImg.length;i++){
+        oImg[i].className="";
+        oLi[i].className="";
+    }
+    oImg[now].className="on";
+    oLi[now].className="on";
+    now++;
+    if(now==oImg.length) now=0;
+}
+function go(){
+    setInterval(play,1000)
+}
+go();
+
+oLeft.onclick=oRight.onclick=function(){
+    if(this==oLeft){
+        now--;
+        if(now==-1) now=oLi.length-1;
+    }else if(this==oRight){
+        now++;
+        if(now==oImg.length) now=0;
+    }
     
-
-
+}

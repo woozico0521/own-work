@@ -200,11 +200,19 @@
 			</div>
 			<div class="con clearfix">
 				<div class="left fl">
-					<div class="big"><img src="images/y1-el-01.jpg" /></div>
-					<div class="small">
-						<div class="pic"><img src="images/y1-el-01.jpg"></div>
-						<div class="pic"><img src="images/y1-el-02.jpg"></div>
-						<div class="pic"><img src="images/y1-el-03.jpg"></div>
+					<div class="big" id="fd">
+						<img src="images/y1-el-01.jpg" id="big" />
+						<img src="images/y1-el-01.jpg" id="da" />
+						<div id="drag"></div>
+						<div id="mask"></div>
+					</div>
+					<div class="small" id="small">
+						<img src="images/y1-el-01.jpg">
+						<img src="images/T180809271312-2.jpg">
+						<img src="images/T180809271312-3.jpg">
+					</div>
+					<div id="aft">
+						
 					</div>
 					<div class="sp">
 						<!-- 商品编码 -->
@@ -262,13 +270,13 @@
 					<div class="banner-sl clearfix"><!-- 数量 -->
 						<span class="fl">数量</span>
 						<div class="banner-num">
-							<span class="banner-minus"><a href="#">-</a></span>
-							<input type="text" value="1" />
-							<span class="banner-plus"><a href="#">+</a></span>
+							<span class="banner-minus" id="minus">-</span>
+							<input type="text" value="1" id="input"/>
+							<span class="banner-plus" id="add">+</span>
 						</div>
-						<span class="banner-ps">
+						<!-- <span class="banner-ps">
 							仅剩<i class="banner-pink">1</i>件,抓紧时间抢购哦!
-						</span>
+						</span> -->
 					</div>
 					<div class="by-stages clearfix"><!-- 分期 -->
 						<span class="fq">分期</span>
@@ -297,10 +305,12 @@
 
 	<main>
 		<div class="center">
-			<div class="main-title clearfix"><!-- 商品详情 -->
+			<div class="main-title clearfix" id="nav"><!-- 商品详情 -->
 				<p class="main-xq fl"><a href="#">商品详情</a></p>
 				<p class="main-zx fl"><a href="#">商品咨询</a></p>
 				<p class="main-we fl"><a href="#">关于我们</a></p>
+				<p class="title-car fr" id="car"><a href="#"><img src="images/y1-banner-car-bg.jpg" />加入购物车</a></p>
+				<p class="title-price fr" id="price">¥818</p>
 			</div>
 			<div class="main-cs"><!-- 商品参数 -->
 				<div class="main-cs-title">
@@ -499,5 +509,6 @@
 		</div>
 		<p class="survey"><img src="images/201807261713424977.png"></p>
 	</footer>
+<script src="js/y1.js"></script>
 </body>
 </html>
