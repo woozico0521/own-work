@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<script src="js/wow.min.js"></script>
 	<title>美妆</title>
 	<link rel="stylesheet" href="css/a1.css">
+	<script>
+		window.onload=function(){
+			new WOW().init();//初始化
+		}
+    </script>
 </head>
 <body>
 	<aside>
@@ -202,9 +209,9 @@
 			<div class="center">
 				<div class="up">
 					<ul>
-						<li><a href="#"><img src="images/a1-banner-dfzm.jpg"></a></li>
-						<li><a href="#"><img src="images/a1-banner-hufu.jpg"></a></li>
-						<li><a href="#"><img src="images/a1-banner-top.jpg"></a></li>
+						<li class="wow bounceInUp"><a href="#"><img src="images/a1-banner-dfzm.jpg"></a></li>
+						<li class="wow bounceInUp" data-wow-delay="0.5s"><a href="#"><img src="images/a1-banner-hufu.jpg"></a></li>
+						<li class="wow bounceInUp" data-wow-delay="1s"><a href="#"><img src="images/a1-banner-top.jpg"></a></li>
 					</ul>
 				</div>
 				<div class="line">

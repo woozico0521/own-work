@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<script src="js/wow.min.js"></script>
 	<title>首页</title>
 	<link rel="stylesheet" href="css/index.css">
+	<script>
+		window.onload=function(){
+			new WOW().init();//初始化
+		}
+    </script>
 </head>
 <body>
 	<aside>
@@ -212,15 +219,15 @@
 					<div id="right">&gt;</div>
 				</div>
 			</div>
-			<div class="mlfb">
+			<div class="mlfb wow bounceIn">
 				<a href="#"><img src="images/banner-mlfb.jpg"></a>
 				<ul>
-					<li><a href="#"><img src="images/banner-199-100.png"></a></li>
-					<li><a href="#"><img src="images/banner-158-30.png"></a></li>
-					<li><a href="#"><img src="images/banner-200-50.png"></a></li>
+					<li class="wow bounceInUp"><a href="#"><img src="images/banner-199-100.png"></a></li>
+					<li class="wow bounceInUp" data-wow-delay="1s"><a href="#"><img src="images/banner-158-30.png"></a></li>
+					<li class="wow bounceInUp" data-wow-delay="2s"><a href="#"><img src="images/banner-200-50.png"></a></li>
 				</ul>
 			</div>
-			<p><a href="#"><img src="images/banner-redbag.jpg"></a></p>
+			<p class="wow pulse"><a href="#"><img src="images/banner-redbag.jpg"></a></p>
 			<p><img src="images/today_DDp.png"></p>
 		</div>
 	</div>
@@ -228,21 +235,21 @@
 		<div class="center">
 			<div class="title">
 				<ul>
-					<li class="father"><a href="#"><img src="images/zhuanshu-text.png"></a>
+					<li class="father  wow slideInLeft"><a href="#"><img src="images/zhuanshu-text.png"></a>
 						<ul>
 							<li class="child"><a href="#"><img src="images/zs-01.jpg"></a></li>
 							<li class="child"><a href="#"><img src="images/zs-02.jpg"></a></li>
 							<li class="child"><a href="#"><img src="images/zs-03.jpg"></a></li>
 						</ul>
 					</li>
-					<li class="father"><a href="#"><img src="images/top-text-1.png"></a>
+					<li class="father wow slideInDown"><a href="#"><img src="images/top-text-1.png"></a>
 						<ul>
 							<li class="child"><a href="#"><img src="images/top-01.jpg"></a></li>
 							<li class="child"><a href="#"><img src="images/top-02.jpg"></a></li>
 							<li class="child"><a href="#"><img src="images/top-03.jpg"></a></li>
 						</ul>
 					</li>
-					<li class="father"><a href="#"><img src="images/she-text.png"></a>
+					<li class="father wow slideInRight"><a href="#"><img src="images/she-text.png"></a>
 						<ul>
 							<li class="child"><a href="#"><img src="images/she-01.jpg"></a></li>
 							<li class="child"><a href="#"><img src="images/she-02.jpg"></a></li>
@@ -269,7 +276,7 @@
 			</div>
 			<div class="con">
 				<ul>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>初秋微漾 睡衣上新季</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -284,7 +291,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>北欧 都市 文艺</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -299,7 +306,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>扶摇同款 玫瑰面膜</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -314,7 +321,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>清仓钜惠</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -329,7 +336,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>立秋换新 雾道精选</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -344,7 +351,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>意大利轻奢水钻女鞋</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -359,7 +366,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>平价大牌 强势清仓</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -374,7 +381,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>德国轻奢 休闲型格</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -389,7 +396,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>给你一个精致的公主梦</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -404,7 +411,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>哈森集团 来自台湾</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -419,7 +426,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>英国街头复古潮流</p></div>
 						<div class="li-hover">
 							<div class="up">
@@ -434,7 +441,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="part">
+					<li class="part wow swing">
 						<div class="des"><p>拼净全力 型动起来</p></div>
 						<div class="li-hover">
 							<div class="up">
