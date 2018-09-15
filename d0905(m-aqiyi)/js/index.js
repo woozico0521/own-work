@@ -33,6 +33,9 @@ function disp(){
 setInterval(disp,2000);
 })();
 
+
+
+
 (function(){/* footer */
     var oLi=document.getElementById("foot").getElementsByTagName("li");
     var oImg=document.getElementById("foot").getElementsByClassName("img");
@@ -49,5 +52,16 @@ setInterval(disp,2000);
                 oImg[index].src="images/"+pic1[index];
             }
         })(i);
+    }
+})();
+
+(function(){/* chat */
+    var oChat=document.getElementById("chat");
+    var oLi=oChat.getElementsByTagName("li");
+    oChat.onmousemove=function(ev){
+        var e=ev||window.event;
+        console.log(e.clientX);
+        //var l=this.offsetLeft;
+        oChat.style.left=-e.clientX+"px";
     }
 })();

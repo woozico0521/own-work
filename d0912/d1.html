@@ -8,15 +8,15 @@
 </head>
 <body>
 <h2></h2>
-<input type="text">
+请输入邮箱号:<input type="text">
 <script>
 var oInput=document.getElementsByTagName("input")[0];
 var oH2=document.getElementsByTagName("h2")[0];
-var reg=/^\w{4,10}\@\w{2,3}\.com/g;
+var reg=/^\w{4,14}\@163.com$|^\w{4,14}\@qq.com$|^\w{4,14}\@139.com$|^\w{4,14}\@sina.com$|^\w{4,14}\@gmail.com$/;
 oInput.onkeyup=function(){
     var str=oInput.value;
     if(reg.test(str)){
-        oH2.innerHTML=str+"√";
+        oH2.innerHTML=str+" √";
         oH2.style.color="green";
     }else{
         oH2.innerHTML="请输入正确的邮箱格式!";
