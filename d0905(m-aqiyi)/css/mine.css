@@ -6,11 +6,25 @@ i{font-style: normal;}
 body{width: 100%;height: 100%;}
 
 /* header */
-header{width: 100%;height: 100px;background: #3D3D3F;overflow: hidden;}
+header{width: 100%;height: 150px;background: #3D3D3F;overflow: hidden;border-bottom: 10px solid #ddd;}
 header .up{width: 100%;margin-top: 10px;}
 header .up i{color: #fff;font:16px/20px normal;margin-left: 140px;}
 header .up p{width: 120px;float: right;}
 header .up p img{width: 20px;height: 20px;margin-left: 20px;}
+
+header .down{width: 100%;text-align: center;margin-top:40px;display: flex;}
+header .down i{width: 50px;height: 50px;background: #fff;border-radius: 50px;display: inline-block;margin-left: 20px;}
+header .down i img{width: 50px;height: 50px;}
+header .down p{width: 100px;height:50px;line-height:50px;color: #aaa;}
+header .down p a{color: #fff;margin:0 10px;}
+header .down p:last-child{width: 100px;height:30px;line-height:30px;background: #515153;border-radius: 30px;margin-top:10px;margin-left: 40px;}
+header .down p:last-child a{font-size:8px; color: #ddd;}
+
+
+/* vip */
+.vip{width: 100%;}
+.vip h3{font-size: 16px;line-height: 40px;border-bottom: 1px solid #F9F9F9;padding-left: 10px;}
+
 
 
 
