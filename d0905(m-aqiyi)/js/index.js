@@ -20,6 +20,32 @@
     }
 })();
 
+/* ite */
+(function(){
+    let ite = document.getElementById('ite');
+    let btn = ite.getElementsByClassName('btn')[0];
+    let iteChild1 = ite.getElementsByClassName('ite-child1')[0];
+    let iteChild = ite.getElementsByClassName('ite-child')[0];
+    let bool=true;
+    btn.onclick=function(){
+        if(bool==true){
+            ite.style.height="100px";
+            iteChild.style.display="block";
+            iteChild.style.display="flex";
+            iteChild1.style.display="block";
+            iteChild1.style.display="flex";
+            bool=false;
+        }else{
+            ite.style.height="25px";
+            iteChild.style.display="none";
+            iteChild.style.display="flex";
+            iteChild1.style.display="none";
+            iteChild1.style.display="flex";
+            bool=true;
+        }
+    }
+})();
+
 (function(){/* nav */
 var oNav=document.getElementById("nav");
 var oImg=document.getElementById("img");
