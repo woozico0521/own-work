@@ -1,6 +1,6 @@
 *{margin:0;padding: 0;}
 li{list-style: none;}
-a{text-decoration: none;}
+a{text-decoration: none;color: #666;}
 a:hover{text-decoration: none;}
 i{font-style: normal;}
 body{width: 100%;height: 100%;}
@@ -24,6 +24,11 @@ header .down p:last-child a{font-size:8px; color: #ddd;}
 /* vip */
 .vip{width: 100%;}
 .vip h3{font-size: 16px;line-height: 40px;border-bottom: 1px solid #F9F9F9;padding-left: 10px;}
+.vip ul{width: 100%;height: 70px;display:flex;justify-content: space-evenly;border-bottom: 10px solid #f9f9f9;}
+.vip ul li{width: 46%;height: 50px;background: #f9f9f9;margin-top:10px;}
+.vip ul li img{width: 30%;}
+.vip ul li dl{float: right;font-size: 14px;margin:5px 10px 0 0;}
+.vip ul li dl dt{color: #A88043;}
 
 
 

@@ -1,6 +1,7 @@
 
 
 
+
 (function(){/* footer */
     var oLi=document.getElementById("foot").getElementsByTagName("li");
     var oImg=document.getElementById("foot").getElementsByClassName("img");
