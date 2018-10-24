@@ -25,6 +25,18 @@
     }
 })();
 
+/* banner */
+(function(){
+    let oImg = document.getElementById('img');
+    let oImgs = ['images/vip-banner2.jpg','images/vip-banner3.jpg','images/vip-banner4.jpg','images/vip-banner5.jpg',];
+    let i = 0;
+    function show(){
+        oImg.src = oImgs[i];
+        i++;
+        if(i==oImgs.length) i=0;
+    }
+    setInterval(show,1000);
+})();
 
 (function(){/* footer */
     var oLi=document.getElementById("foot").getElementsByTagName("li");

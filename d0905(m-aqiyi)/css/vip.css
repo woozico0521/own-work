@@ -20,8 +20,20 @@ header #down ul{width: 160%; display:flex;justify-content: space-evenly;margin-t
 header #down ul li{height: 30px;font-size:16px;color:#D0D0D0;line-height: 30px;}
 header #down ul li.down-on{color:#E1BA8B;font-weight: bold;border-bottom:2px solid #E1BA8B;}
 
-#banner{width: 100%;}
-#banner img{width: 100%;}
+#banner{width: 100%;height:220px; border-bottom: 1px solid #E2E2E2;}
+#banner a img{width: 100%;margin-bottom: 10px;}
+#banner span:nth-of-type(1){float: left;font-size: 14px;line-height: 30px;}
+#banner span img{width: 30px;vertical-align: middle;}
+#banner span:nth-of-type(2){float: right;margin-right:10px;}
+#banner span a{width: 50px;height: 30px;background: #EECD98;display:inline-block;line-height: 30px;text-align:center;border-radius: 20px;margin:0 5px;color: #835C26;}
+
+/* movie */
+#movie{width: 100%;}
+#movie .movie-top{width: 96%;height: 30px;padding: 2%;}
+#movie .movie-top h2{font-size: 20px;float: left;}
+#movie .movie-top span{float: right;line-height: 30px;}
+#movie .movie-top span img{width: 20px;vertical-align: middle;}
+
 
 
 
