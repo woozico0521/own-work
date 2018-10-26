@@ -139,7 +139,7 @@ header .down .center div:last-child ul li .yg{width: 20px;height: 32px;display: 
 .banner .con .left .big #big{width:400px;}
 .banner .con .left .big #da{width:800px;height:800px;position: absolute;left:0;top: 0;display: none;}
 .banner .con .left .big #mask{width: 400px;height: 400px;background:rgba(0,0,0,0);position: absolute;left: 0;top:0;}
-.banner .con .left .big #drag{width: 200px;height: 200px;background: rgba(0,0,0,0.2);position: absolute;top:0;left: 0;display: none;}
+.banner .con .left .big #drag{width: 200px;height: 200px;background: rgba(0,0,0,0);position: absolute;top:0;left: 0;display: none;}
 
 .banner .con .left .small{width: 206px;height: 64px;margin: 0 auto;}
 .banner .con .left .small img{width: 62px;border: 1px solid #F2F2F2;margin: 2px;float: left; }
@@ -167,25 +167,26 @@ header .down .center div:last-child ul li .yg{width: 20px;height: 32px;display: 
 .banner .con .right .title{font-size: 16px;font-weight: bold;color: #333;}
 	/* 价格 */
 .banner .con .right .price{width: 100%;height: 85px;background: #FAF5F8;margin-top:10px;vertical-align: middle;}
-.banner .con .right .price .num{color: #F53499;font-size: 48px;display: inline-block;margin: 30px 0 0 20px;float: left;}
+.banner .con .right .price .num{color: #F53499;font-size: 48px;display: inline-block;margin: 15px 0 0 20px;/* float: left; */font-style: normal;}
 .banner .con .right .price .num .rmb{font-size: 20px;font-style: normal;}
-.banner .con .right .price .yj{width:100px;float: left;margin:20px 0 0 20px; }
+
+.banner .con .right .price .yj{width:100px;float: right;margin:20px 280px 0 20px; }
 .banner .con .right .price .yj .zk{width: 40px;height: 18px;border: 1px solid #F43499;line-height: 18px;text-align: center;border-radius: 3px;color: #F43499;}
 .banner .con .right .price .yj .bp{font-size: 15px;text-decoration: line-through;}
 	/* 配送 */
 .banner .con .right .send span{float: left;margin-top: 20px;}
-.banner .con .right .send .address{width: 250px;height: 30px;border:1px solid #ccc;margin:15px  0 0 20px;float: left;line-height: 30px;background: #fff;}
-.banner .con .right .send .address .more{width: 7px;height: 10px;background: url(../images/share-sef3db69c23.png)no-repeat;background-position: 0 -15px;display: inline-block;float: right;margin:10px 10px 0 0;}
+.banner .con .right .send #address{width: 250px;height: 30px;border:1px solid #ccc;margin:15px  0 0 20px;float: left;line-height: 30px;background: #fff;}
+.banner .con .right .send #address .more{width: 7px;height: 10px;background: url(../images/share-sef3db69c23.png)no-repeat;background-position: 0 -15px;display: inline-block;float: right;margin:10px 10px 0 0;}
 	/* 地址 */
-.banner .con .right .send .address dl{width: 488px;height: 299px;border: 1px solid #ccc;margin:0 0 0 -50px;position: relative;z-index: 1;display: none;background: #fff;}
-.banner .con .right .send .address dl dt{width: 60px;height: 30px;border-top: 2px solid #F10180;margin:20px 0 0 20px;text-align: center;font-weight: bold; border-left: 1px solid #ccc;border-right:1px solid #ccc; float: left;}
-.banner .con .right .send .address dl span{width:390px;height: 30px;border-bottom: 1px solid #ccc; }
-.banner .con .right .send .address dl dd{width: 45px;height: 20px;float: left;margin: 20px;border:1px solid #fff;text-align: center;line-height: 20px;}
-.banner .con .right .send .address dl dd:nth-child(3){margin-left: -40px;}
-.banner .con .right .send .address dl dd:nth-child(8){margin-left: 40px;}
-.banner .con .right .send .address dl dd:hover{border:1px solid #F10180;}
-.banner .con .right .send .address dl dd:hover a{text-decoration: none;color: #F10180;}
-.banner .con .right .send .address:hover dl{display: block;}
+.banner .con .right .send #address dl{width: 488px;height: 299px;border: 1px solid #ccc;margin:0 0 0 -50px;position: relative;z-index: 1;display: none;background: #fff;}
+.banner .con .right .send #address dl dt{width: 60px;height: 30px;border-top: 2px solid #F10180;margin:20px 0 0 20px;text-align: center;font-weight: bold; border-left: 1px solid #ccc;border-right:1px solid #ccc; float: left;}
+.banner .con .right .send #address dl span{width:390px;height: 30px;border-bottom: 1px solid #ccc; }
+.banner .con .right .send #address dl dd{width: 46px;height: 20px;float: left;margin: 20px;border:1px solid #fff;text-align: center;line-height: 20px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.banner .con .right .send #address dl dd:nth-child(3){margin-left: -40px;}
+.banner .con .right .send #address dl dd:nth-child(8){margin-left: 40px;}
+.banner .con .right .send #address dl dd:hover{border:1px solid #F10180;}
+.banner .con .right .send #address dl dd:hover a{text-decoration: none;color: #F10180;}
+/* .banner .con .right .send #address:hover dl{display: block;} */
 	/* 运费 */
 .banner .con .right .freight{margin-top:15px;}
 .banner .con .right .freight span{margin-right: 20px;}

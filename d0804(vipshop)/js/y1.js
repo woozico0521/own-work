@@ -20,8 +20,8 @@
     /* 放大 */
     oMask.onmousemove=function(ev){
         var e=ev||event;
-        var left = e.clientX - oDrag.offsetWidth; 
-        var top = e.clientY - oDrag.offsetHeight/2;  
+        var left = e.pageX - oDrag.offsetWidth; 
+        var top = e.pageY - oDrag.offsetHeight;  
 
         //oDrag只能在OMask的范围内移动
         if(left<0) left=0;
@@ -65,6 +65,8 @@
 var oAdd=document.getElementById("add");
 var oMinus=document.getElementById("minus")
 var oInput=document.getElementById("input");
+var oPrice=document.getElementById("price");
+var oNum=document.getElementById("num");
 var i=1;
 oAdd.onclick=oMinus.onclick=function(){
     if(this==oAdd){
@@ -75,13 +77,37 @@ oAdd.onclick=oMinus.onclick=function(){
         if(i<1) i=1;
         oInput.value=i;
     }
+    oPrice.innerText=parseInt(i)*parseInt(oNum.innerText);
+    
 }
+})();
+
+(function(){
+    let oAddress = document.getElementById("address");
+    let oLocal = document.getElementById("local");
+    let oDd = oLocal.getElementsByTagName('dd');
+    let bool = true;
+    
+    oAddress.addEventListener('click',function(){
+        if(bool==true){
+            oLocal.style.display='block';
+        }else{
+            oLocal.style.display='none';
+        }
+        bool = !bool;
+    });
+    for(let i=0;i<oDd.length;i++){
+        oDd[i].addEventListener('click',function(){
+            oAddress.innerHTML=oDd[i].innerText+'<i class="more"></i><dl class="clearfix" id="local">'+oLocal.innerHTML+'</dl>';
+        })
+        
+    }
 })();
 
 (function(){//详情
     var oNav=document.getElementById("nav");
     var oCar=document.getElementById("car");
-    var oPrice=document.getElementById("price");
+    
     
     window.addEventListener("scroll",function(e){
         

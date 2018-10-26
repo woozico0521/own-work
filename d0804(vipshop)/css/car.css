@@ -87,16 +87,22 @@ main .main-jx .main-sp-01 .main-sp-price{width: 200px;text-align: center;margin-
 main .main-jx .main-sp-01 .main-sp-price p:first-child{color: #000;}
 main .main-jx .main-sp-01 .main-sp-price p:last-child{text-decoration: line-through;}
 main .main-jx .main-sp-01 .main-sp-infor span:nth-child(3):hover a{color: #F10180;}
-	/* 商品数量1 */
-main .main-jx .main-sp-01 .main-sp-sl{width: 130px;text-align: center;}
-main .main-jx .main-sp-01 .main-sp-num{width: 72px;height: 20px;border: 1px solid #ccc;float: left;margin:0 0 0 28px;}
-main .main-jx .main-sp-01 .main-sp-num .main-sp-minus{width: 20px;height: 20px;display: inline-block;text-align: center;}
-main .main-jx .main-sp-01 .main-sp-num input{width: 20px;height: 17px;text-align: center;}
-main .main-jx .main-sp-01 .main-sp-num .main-sp-plus{width: 20px;height: 20px;display: inline-block;text-align: center;}
-	/* 商品小计1 */
-main .main-jx .main-sp-01 .main-sp-yh{width: 130px;text-align: center;}
-main .main-jx .main-sp-01 .main-sp-yh p:first-child{color: #F10180;font-weight: bold;}
-main .main-jx .main-sp-01 .main-sp-yh p:last-child{width: 90px;height: 20px;border: 1px solid #FFB333;color: #FFB333;border-radius: 5px;margin: 5px auto;}
+	
+
+/* 商品数量 */
+main .main-jx .main-sp-sl{width: 130px;text-align: center;}
+main .main-jx .main-sp-num{width: 72px;height: 20px;border: 1px solid #ccc;float: left;margin:0 0 0 28px;}
+main .main-jx .main-sp-num .main-sp-minus{width: 20px;height: 20px;display: inline-block;text-align: center;}
+main .main-jx .main-sp-num input{width: 20px;height: 17px;text-align: center;}
+main .main-jx .main-sp-num .main-sp-plus{width: 20px;height: 20px;display: inline-block;text-align: center;}
+
+
+	/* 商品小计 */
+main .main-jx .main-sp-yh{width: 130px;text-align: center;}
+main .main-jx .main-sp-yh p:first-child{color: #F10180;font-weight: bold;}
+main .main-jx .main-sp-yh p:last-child{width: 90px;height: 20px;border: 1px solid #FFB333;color: #FFB333;border-radius: 5px;margin: 5px auto;}
+
+
 	/* 商品删除1 */
 main .main-jx .main-sp-01 .main-sp-cz{width: 130px;text-align: center;}
 
@@ -113,16 +119,9 @@ main .main-jx .main-sp-02 .main-sp-price{width: 200px;text-align: center;margin-
 main .main-jx .main-sp-02 .main-sp-price p:first-child{color: #000;}
 main .main-jx .main-sp-02 .main-sp-price p:last-child{text-decoration: line-through;}
 main .main-jx .main-sp-02 .main-sp-infor span:nth-child(3):hover a{color: #F10180;}
-	/* 商品数量2 */
-main .main-jx .main-sp-02 .main-sp-sl{width: 130px;text-align: center;}
-main .main-jx .main-sp-02 .main-sp-num{width: 72px;height: 20px;border: 1px solid #ccc;float: left;margin:0 0 0 28px;}
-main .main-jx .main-sp-02 .main-sp-num .main-sp-minus{width: 20px;height: 20px;display: inline-block;text-align: center;}
-main .main-jx .main-sp-02 .main-sp-num input{width: 20px;height: 17px;text-align: center;}
-main .main-jx .main-sp-02 .main-sp-num .main-sp-plus{width: 20px;height: 20px;display: inline-block;text-align: center;}
-	/* 商品小计2 */
-main .main-jx .main-sp-02 .main-sp-yh{width: 130px;text-align: center;}
-main .main-jx .main-sp-02 .main-sp-yh p:first-child{color: #F10180;font-weight: bold;}
-main .main-jx .main-sp-02 .main-sp-yh p:last-child{width: 90px;height: 20px;border: 1px solid #FFB333;color: #FFB333;border-radius: 5px;margin: 5px auto;}
+
+
+
 	/* 商品删除2 */
 main .main-jx .main-sp-02 .main-sp-cz{width: 130px;text-align: center;}
 
@@ -139,16 +138,8 @@ main .main-jx .main-sp-03 .main-sp-price{width: 200px;text-align: center;margin-
 main .main-jx .main-sp-03 .main-sp-price p:first-child{color: #000;}
 main .main-jx .main-sp-03 .main-sp-price p:last-child{text-decoration: line-through;}
 main .main-jx .main-sp-03 .main-sp-infor span:nth-child(3):hover a{color: #F10180;}
-	/* 商品数量3 */
-main .main-jx .main-sp-03 .main-sp-sl{width: 130px;text-align: center;}
-main .main-jx .main-sp-03 .main-sp-num{width: 72px;height: 20px;border: 1px solid #ccc;float: left;margin:0 0 0 28px;}
-main .main-jx .main-sp-03 .main-sp-num .main-sp-minus{width: 20px;height: 20px;display: inline-block;text-align: center;}
-main .main-jx .main-sp-03 .main-sp-num input{width: 20px;height: 17px;text-align: center;}
-main .main-jx .main-sp-03 .main-sp-num .main-sp-plus{width: 20px;height: 20px;display: inline-block;text-align: center;}
-	/* 商品小计3 */
-main .main-jx .main-sp-03 .main-sp-yh{width: 130px;text-align: center;}
-main .main-jx .main-sp-03 .main-sp-yh p:first-child{color: #F10180;font-weight: bold;}
-main .main-jx .main-sp-03 .main-sp-yh p:last-child{width: 90px;height: 20px;border: 1px solid #FFB333;color: #FFB333;border-radius: 5px;margin: 5px auto;}
+
+
 	/* 商品删除3 */
 main .main-jx .main-sp-03 .main-sp-cz{width: 130px;text-align: center;}
 
