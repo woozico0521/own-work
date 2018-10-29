@@ -52,7 +52,7 @@ p.vip-video-des{width: 100px;white-space:nowrap; overflow: hidden;text-overflow:
 #drama .drama-top span{float: right;line-height: 30px;}
 #drama .drama-top span img{width: 20px;vertical-align: middle;}
 
-#drama .drama-con{width: 100%;height: 170px;overflow: auto;}
+#drama .drama-con{width: 100%;height: 180px;overflow: auto;}
 #drama .drama-con::-webkit-scrollbar{display:none;}
 #drama .drama-con ul{width: 100%;display: flex;}
 #drama .drama-con ul li{width: 100px;margin-left: 5px;}
@@ -85,10 +85,39 @@ p.vip-video-des{width: 100px;white-space:nowrap; overflow: hidden;text-overflow:
 
 
 /* 开通会员 */
-#vip-open{margin-bottom: 100px;background: #DFBC86;color: #fff;height: 40px;;line-height: 40px;text-align: center;}
+#vip-open{background: #DFBC86;color: #fff;height: 40px;;line-height: 40px;text-align: center;}
 #vip-open img{width: 30px;vertical-align: middle;}
 
 /* 热门影人 */
+#vip-hot{width: 100%;border-bottom: 1px solid #E2E2E2;}
+#vip-hot h2{font-size: 20px;}
+#vip-hot .man{width: 100%;overflow: auto;}
+#vip-hot .man::-webkit-scrollbar{display: none;}
+#vip-hot .man ul{display: flex;}
+#vip-hot .man ul li{width: 60px;margin:5px;text-align: center;}
+#vip-hot .man ul li img{width: 60px;}
+#vip-hot .man ul li p{width: 70px;height: 1px;background: #f5f5f5;margin-left:-5px;margin-top:4px;}
+#vip-hot .man ul li.man-click p{background: url(../images/vip-line.jpg)no-repeat;height:12px;background-size: 70px;margin-top:0;}
+#vip-hot .hot-movie{width: 100%;overflow: auto;}
+#vip-hot .hot-movie::-webkit-scrollbar{display:none;}
+#vip-hot .hot-movie ul{display: flex;margin-bottom:10px;}
+#vip-hot .hot-movie ul li{width: 100px;margin-left: 10px;}
+#vip-hot .hot-movie ul li dt img{width: 100px;}
+#vip-hot .hot-movie ul li dd{width: 80px;margin-left:10px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+#vip-hot .hot-movie ul li dd:nth-of-type(1){font-size: 0.8rem;color: #000;}
+#vip-hot .hot-movie ul li dd:nth-of-type(2){font-size: 0.7rem;}
+
+
+/* magic */
+#magic{width: 100%; margin-bottom: 100px;}
+#magic .movie-top{width: 96%;height: 30px;padding: 2%;}
+#magic .movie-top h2{font-size: 20px;float: left;}
+#magic .movie-top span{float: right;line-height: 30px;}
+#magic .movie-top span img{width: 20px;vertical-align: middle;}
+#magic .magic-down{width: 100%;}
+#magic .magic-down ul{width: 94%;margin:0 3%;}
+#magic .magic-down li{float: left;width: 30%;margin-left: 2.5%;height: 90px;}
+#magic .magic-down li:nth-of-type(odd){background: #f00;}
 
 
 
@@ -99,3 +128,14 @@ footer ul{width: 100%;display:flex;justify-content: space-evenly;align-items: ba
 footer ul li{width: 30px;text-align: center;}
 footer ul li a{color: #333;font-size: 6px;}
 footer ul li.on a{color: #0BBE06;}
+
+
+@media only screen and (min-width:350px){
+    #banner{width: 100%;height:240px; border-bottom: 1px solid #E2E2E2;}
+
+}
+
+@media only screen and (min-width:410px){
+    #banner{width: 100%;height:260px; border-bottom: 1px solid #E2E2E2;}
+
+}

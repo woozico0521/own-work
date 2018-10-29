@@ -83,7 +83,7 @@ main .main-tj dl dd{height: 20px;font:8px/20px normal;color: #777;}
 .drama .drama-down ul li{width: 33%;margin-top:10px;}
 .drama .drama-down ul li img{width: 100%;}
 .drama .drama-down ul li a{font: 10px/20px '黑体';color: #333;}
-.drama .drama-down ul li h3{margin-left: 10px;}
+.drama .drama-down ul li h3{margin-left: 10px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .drama .drama-more{width: 100%;height: 45px;margin:15px 0 15px 0;border-bottom: 1px solid #F9F9F9;}
 .drama .drama-more ul{width: 100%;display: flex;justify-content: space-evenly;}
 .drama .drama-more ul li{width: 45%;height: 30px;background: #F5F5F5;text-align: center;border-radius: 5px;}
@@ -106,7 +106,7 @@ main .main-tj dl dd{height: 20px;font:8px/20px normal;color: #777;}
 .movie .movie-down ul li{width: 33%;margin-top:10px;}
 .movie .movie-down ul li img{width: 100%;}
 .movie .movie-down ul li a{font: 10px/20px '黑体';color: #333;}
-.movie .movie-down ul li h3{margin-left: 10px;}
+.movie .movie-down ul li h3{margin-left: 10px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .movie .movie-more{width: 100%;height: 45px;margin:15px 0 15px 0;border-bottom: 1px solid #F9F9F9;}
 .movie .movie-more ul{width: 100%;display: flex;justify-content: space-evenly;}
 .movie .movie-more ul li{width: 45%;height: 30px;background: #F5F5F5;text-align: center;border-radius: 5px;}
@@ -147,3 +147,10 @@ footer ul{width: 100%;display:flex;justify-content: space-evenly;align-items: ba
 footer ul li{width: 30px;text-align: center;}
 footer ul li a{color: #333;font-size: 6px;}
 footer ul li.on a{color: #0BBE06;}
+
+
+
+@media only screen and (min-width:400px){
+    main .main-tj{width: 48%;height: 170px;}
+    .chat .down{width: 100%;height: 120px; overflow: auto;position: relative;}
+}

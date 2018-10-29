@@ -56,3 +56,19 @@
         })(i);
     }
 })();
+
+/* 热门影视 */
+(function(){
+    var oUl = document.getElementById("movier");
+    var oLi = oUl.getElementsByTagName('li');
+    for(var i=0;i<oLi.length;i++){
+        (function(index){
+            oLi[i].onclick=function(){
+                for(var j=0;j<oLi.length;j++){
+                    oLi[j].className="";
+                }
+                oLi[index].className="man-click";
+            }
+        })(i);
+    }
+})();
