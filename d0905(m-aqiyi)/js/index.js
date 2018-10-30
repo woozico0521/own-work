@@ -104,3 +104,4 @@ setInterval(disp,2000);
         oChat.style.left=-e.clientX+"px";
     }
 })();
+

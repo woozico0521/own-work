@@ -7,7 +7,7 @@ body{width: 100%;height: 100%;}
 
 
 /* header */
-header{width: 100%;height: 90px;background: #3d3d3d;}
+header{width: 100%;height: 90px;background: #3d3d3d;position:fixed;top:0;z-index: 100;}
 header #top{width: 100%;height: 45px;overflow: hidden;border-bottom:1px solid #353535}
 header #top dl{margin-top:10px;width: 100%;}
 header #top dt{float:right;margin-right: 20px;}
@@ -21,7 +21,7 @@ header #down ul{width: 160%; display:flex;justify-content: space-evenly;margin-t
 header #down ul li{height: 30px;font-size:16px;color:#D0D0D0;line-height: 30px;}
 header #down ul li.down-on{color:#E1BA8B;font-weight: bold;border-bottom:2px solid #E1BA8B;}
 
-#banner{width: 100%;height:220px; border-bottom: 1px solid #E2E2E2;}
+#banner{width: 100%;height:220px; border-bottom: 1px solid #E2E2E2;margin-top:90px;}
 #banner a img{width: 100%;margin-bottom: 10px;}
 #banner span:nth-of-type(1){float: left;font-size: 14px;line-height: 30px;}
 #banner span img{width: 30px;vertical-align: middle;}
@@ -85,8 +85,8 @@ p.vip-video-des{width: 100px;white-space:nowrap; overflow: hidden;text-overflow:
 
 
 /* 开通会员 */
-#vip-open{background: #DFBC86;color: #fff;height: 40px;;line-height: 40px;text-align: center;}
-#vip-open img{width: 30px;vertical-align: middle;}
+.vip-open{background: #DFBC86;color: #fff;height: 40px;;line-height: 40px;text-align: center;}
+.vip-open img{width: 30px;vertical-align: middle;}
 
 /* 热门影人 */
 #vip-hot{width: 100%;border-bottom: 1px solid #E2E2E2;}
@@ -109,15 +109,51 @@ p.vip-video-des{width: 100px;white-space:nowrap; overflow: hidden;text-overflow:
 
 
 /* magic */
-#magic{width: 100%; margin-bottom: 100px;}
+#magic{width: 100%;height: 355px;margin-bottom: 10px;border-bottom: 1px solid #E2E2E2;}
 #magic .movie-top{width: 96%;height: 30px;padding: 2%;}
 #magic .movie-top h2{font-size: 20px;float: left;}
 #magic .movie-top span{float: right;line-height: 30px;}
 #magic .movie-top span img{width: 20px;vertical-align: middle;}
 #magic .magic-down{width: 100%;}
-#magic .magic-down ul{width: 94%;margin:0 3%;}
-#magic .magic-down li{float: left;width: 30%;margin-left: 2.5%;height: 90px;}
-#magic .magic-down li:nth-of-type(odd){background: #f00;}
+#magic .magic-down ul{width: 96%;margin:0 2%;}
+#magic .magic-down li{float: left;width: 30%;margin:2.5% 0 0 2.5%;height: 90px;text-align: center;border-radius: 10px;}
+#magic .magic-down li:nth-of-type(odd){background: #FAF7F2;}
+#magic .magic-down li:nth-of-type(even){background: #F4F4F4;}
+#magic .magic-down li h3{width: 100%;font-size:1rem;margin-top:25px;}
+#magic .magic-down li:last-child h3{line-height: 90px;margin-top:0px;}
+#magic .magic-down li p{width: 100%;font-size: 0.9rem;}
+
+
+/* gift */
+#gift{width: 100%; border-bottom:1px solid #E2E2E2;padding-bottom:15px; }
+#gift .gift-top{width: 96%;height: 30px;padding: 2%;}
+#gift .gift-top h2{font-size: 20px;float: left;}
+#gift .gift-top span{float: right;line-height: 30px;}
+#gift .gift-top span img{width: 20px;vertical-align: middle;}
+#gift .gift-banner{width: 100%;}
+#gift .gift-banner img{width: 100%;}
+#gift .gift-banner h3{width: 100%;height: 40px;line-height: 40px;font-size:0.9rem;text-align: center;}
+#gift .gift-down{width: 100%;height: 130px;}
+#gift .gift-down ul{width: 100%;display: flex;justify-content: space-between;}
+#gift .gift-down ul li{width: 49%;height: 130px;}
+#gift .gift-down ul li img{width: 100%;}
+#gift .gift-down ul li p{width: 98%;font-size: 0.8rem;margin-left: 2%;white-space: nowrap;overflow:hidden; text-overflow: ellipsis;color: #000;}
+
+/* concert */
+#concert{width: 100%;margin-bottom: 80px;}
+#concert .concert-top{width: 96%;height: 30px;padding: 2%;}
+#concert .concert-top h2{font-size: 20px;float: left;}
+#concert .concert-top span{float: right;line-height: 30px;}
+#concert .concert-top span img{width: 20px;vertical-align: middle;}
+#concert .concert-con{width: 100%;overflow: auto;}
+#concert .concert-con::-webkit-scrollbar{display:none;}
+#concert .concert-con ul{display:flex;width: 430px;}
+#concert .concert-con ul li{width: 180px;margin-right: 5px;}
+#concert .concert-con ul li img{width: 100%;}
+#concert .concert-con ul li h3{font-size: 0.9rem;margin-left: 10px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+#concert .concert-con ul li p{font-size: 0.8rem;margin-left: 10px;}
+
+
 
 
 
@@ -132,10 +168,10 @@ footer ul li.on a{color: #0BBE06;}
 
 @media only screen and (min-width:350px){
     #banner{width: 100%;height:240px; border-bottom: 1px solid #E2E2E2;}
-
+    #gift .gift-down{width: 100%;height: 140px;}
 }
 
 @media only screen and (min-width:410px){
     #banner{width: 100%;height:260px; border-bottom: 1px solid #E2E2E2;}
-
+    #gift .gift-down{width: 100%;height: 150px;}
 }
