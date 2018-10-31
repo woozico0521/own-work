@@ -2,18 +2,7 @@
     let main=document.getElementById('top').getElementsByTagName('ul')[0];
     var oLi=document.getElementById("top").getElementsByTagName("ul")[0].getElementsByTagName("li");
     
-    /* main.onmousedown=function(e){
-        var e = e || event;
-        var x0 = this.offsetLeft;
-        var x1 = e.clientX;
-        main.onmousemove=function(e){
-            var e = e || event;
-            var x2 = e.clientX;
-            x = x0 + (x2 - x1);
-            main.style.top = x + "px";
-            console.log(x0,x1,x2,x)
-        }
-    } */
+    
     for(var i=0;i<oLi.length;i++){
         (function(index){
             oLi[index].onclick=function(){
