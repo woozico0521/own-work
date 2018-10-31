@@ -75,18 +75,20 @@ main .main-jx .main-jx-title dd{width: 130px;height: 40px;line-height: 40px;font
 main .main-jx .main-jx-title dd:nth-child(2){width: 200px;}
 	/* 精选-所有商品 */
 main .main-jx .main-jx-sp{width: 100%;border: 1px solid #ccc;margin-top: -1px;}
-	/* 精选-商品1 */
-main .main-jx .main-sp-01{width: 100%;height: 100px;}
-main .main-jx .main-sp-01 div{float: left;margin-top: 20px;}
-main .main-jx .main-sp-01 img{width: 60px;margin:0 20px;}
-main .main-jx .main-sp-01 .main-sp-infor{width: 170px;}
-main .main-jx .main-sp-01 .main-sp-infor span:first-child{color: #F10180;}
-main .main-jx .main-sp-01 .main-sp-infor i{border-left: 1px solid #ccc;margin-left: 4px;}
-main .main-jx .main-sp-01 .main-sp-infor p{margin-top: 10px;}
-main .main-jx .main-sp-01 .main-sp-price{width: 200px;text-align: center;margin-left: 140px;}
-main .main-jx .main-sp-01 .main-sp-price p:first-child{color: #000;}
-main .main-jx .main-sp-01 .main-sp-price p:last-child{text-decoration: line-through;}
-main .main-jx .main-sp-01 .main-sp-infor span:nth-child(3):hover a{color: #F10180;}
+	/* 精选-商品 */
+main .main-jx .main-sp{width: 100%;height: 100px;}
+main .main-jx .main-sp div{float: left;margin-top: 20px;}
+main .main-jx .main-sp img{width: 60px;margin:0 20px;}
+main .main-jx .main-sp .main-sp-infor{width: 170px;}
+main .main-jx .main-sp .main-sp-infor span:first-child{color: #F10180;}
+main .main-jx .main-sp .main-sp-infor span:nth-child(3){white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+main .main-jx .main-sp .main-sp-infor i{border-left: 1px solid #ccc;margin-left: 4px;}
+
+main .main-jx .main-sp .main-sp-infor p{margin-top: 10px;}
+main .main-jx .main-sp .main-sp-price{width: 200px;text-align: center;margin-left: 140px;}
+main .main-jx .main-sp .main-sp-price p:first-child{color: #000;}
+main .main-jx .main-sp .main-sp-price p:last-child{text-decoration: line-through;}
+main .main-jx .main-sp .main-sp-infor span:nth-child(3):hover a{color: #F10180;}
 	
 
 /* 商品数量 */
@@ -103,45 +105,10 @@ main .main-jx .main-sp-yh p:first-child{color: #F10180;font-weight: bold;}
 main .main-jx .main-sp-yh p:last-child{width: 90px;height: 20px;border: 1px solid #FFB333;color: #FFB333;border-radius: 5px;margin: 5px auto;}
 
 
-	/* 商品删除1 */
-main .main-jx .main-sp-01 .main-sp-cz{width: 130px;text-align: center;}
-
-	/* 精选-商品2 */
-main .main-jx .main-sp-02{width: 100%;height: 100px;}
-main .main-jx .main-sp-02 div{float: left;margin-top: 20px;}
-main .main-jx .main-sp-02 .img{margin-left: -100px;}
-main .main-jx .main-sp-02 img{width: 60px;margin:0 20px;}
-main .main-jx .main-sp-02 .main-sp-infor{width: 170px;}
-main .main-jx .main-sp-02 .main-sp-infor span:first-child{color: #F10180;}
-main .main-jx .main-sp-02 .main-sp-infor i{border-left: 1px solid #ccc;margin-left: 4px;}
-main .main-jx .main-sp-02 .main-sp-infor p{margin-top: 10px;}
-main .main-jx .main-sp-02 .main-sp-price{width: 200px;text-align: center;margin-left: 140px;}
-main .main-jx .main-sp-02 .main-sp-price p:first-child{color: #000;}
-main .main-jx .main-sp-02 .main-sp-price p:last-child{text-decoration: line-through;}
-main .main-jx .main-sp-02 .main-sp-infor span:nth-child(3):hover a{color: #F10180;}
+	/* 商品删除*/
+main .main-jx .main-sp .main-sp-cz{width: 130px;text-align: center;cursor: pointer;}
 
 
-
-	/* 商品删除2 */
-main .main-jx .main-sp-02 .main-sp-cz{width: 130px;text-align: center;}
-
-	/* 精选-商品3 */
-main .main-jx .main-sp-03{width: 100%;height: 100px;}
-main .main-jx .main-sp-03 div{float: left;margin-top: 20px;}
-main .main-jx .main-sp-03 .img{margin-left: -100px;}
-main .main-jx .main-sp-03 img{width: 60px;margin:0 20px;}
-main .main-jx .main-sp-03 .main-sp-infor{width: 170px;}
-main .main-jx .main-sp-03 .main-sp-infor span:first-child{color: #F10180;}
-main .main-jx .main-sp-03 .main-sp-infor i{border-left: 1px solid #ccc;margin-left: 4px;}
-main .main-jx .main-sp-03 .main-sp-infor p{margin-top: 10px;}
-main .main-jx .main-sp-03 .main-sp-price{width: 200px;text-align: center;margin-left: 140px;}
-main .main-jx .main-sp-03 .main-sp-price p:first-child{color: #000;}
-main .main-jx .main-sp-03 .main-sp-price p:last-child{text-decoration: line-through;}
-main .main-jx .main-sp-03 .main-sp-infor span:nth-child(3):hover a{color: #F10180;}
-
-
-	/* 商品删除3 */
-main .main-jx .main-sp-03 .main-sp-cz{width: 130px;text-align: center;}
 
 	/* 运费 */
 main .main-jx .main-sp-yf{width: 100%;height: 40px;border: 1px solid #ccc;margin-top: -1px;line-height: 40px;}

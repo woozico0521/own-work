@@ -36,7 +36,7 @@
 		</div>
 	</header>
 	<main>
-		<div class="center">
+		<div class="center" id="app">
 			<div class="main-title">
 				<span><a href="#">特卖商品</a></span><i></i>
 				<span><a href="#">唯品医药</a></span>
@@ -57,80 +57,32 @@
 						<dd>操作</dd>
 					</dl>
 				</div>
-				<div class="main-jx-sp">
-					<div class="main-sp-01 clearfix">
-						<div class="img"><a href="#"><img src="images/89070422-7f11-4013-937a-9495ab5d7385_t_235x297_90.jpg"></a></div>
+				<ul class="main-jx-sp" v-for="(product, index) in productList" :key="index">
+					<li class="main-sp clearfix">
+						<div class="img"><a href="#"><img :src="product.pic"></a></div>
 						<div class="main-sp-infor"><!-- 商品 -->
-							<span>自营</span><i></i>
-							<span><a href="#">乐町女装时尚风暴节 - 两侧绑带针织开衫</a></span>
-							<p>尺码:S</p>
+							<span>{{product.shop}}</span><i></i>
+							<span><a href="#">{{product.res}}</a></span>
+							<p>尺码:{{product.size}}</p>
 						</div>
 						<div class="main-sp-price">
-							<p>¥219</p>
-							<p>¥459</p><!-- 价格 -->
+							<p>¥{{product.dPrice}}</p>
+							<p>¥{{product.dePrice}}</p><!-- 价格 -->
 						</div>
 						<div class="main-sp-sl">
 							<div class="main-sp-num">
-								<span class="main-sp-minus" id="minus">-</span>
-								<input type="text" value="1" id="input"/>
-								<span class="main-sp-plus" id="plus">+</span>
+								<span class="main-sp-minus" id="minus" @click.stop="minus(index)">-</span>
+								<input type="text" :value="product.num" id="input"/>
+								<span class="main-sp-plus" id="plus" @click.stop="add(index)">+</span>
 							</div><!-- 数量 -->
 						</div>
 						<div class="main-sp-yh"><!-- 小计 -->
-							<p id="rSell1">¥ 175.2</p>
-							<p id="mSale1">已优惠 ¥43.8</p>
+							<p>¥ {{product.rPrice}}</p>
+							<p>已优惠 ¥{{product.sPrice}}</p>
 						</div>
-						<div class="main-sp-cz"><a href="#">删除</a></div>
-					</div>
-					<div class="main-sp-02 clearfix">
-						<div class="img"><a href="#"><img src="images/f3974450-62a5-40ed-95a7-e05bc0c136a3_5t_235x297_90.jpg"></a></div>
-						<div class="main-sp-infor"><!-- 商品 -->
-							<span>自营</span><i></i>
-							<span><a href="#">乐町女装时尚风暴节 - 格纹翻领西装</a></span>
-							<p>尺码:S</p>
-						</div>
-						<div class="main-sp-price">
-							<p>¥329</p>
-							<p>¥609</p><!-- 价格 -->
-						</div>
-						<div class="main-sp-sl">
-							<div class="main-sp-num">
-								<span class="main-sp-minus" id="minus2">-</span>
-								<input type="text" value="1" id="input2"/>
-								<span class="main-sp-plus" id="plus2">+</span>
-							</div><!-- 数量 -->
-						</div>
-						<div class="main-sp-yh"><!-- 小计 -->
-							<p id="rSell2">¥ 263.2</p>
-							<p id="mSale2">已优惠 ¥65.8</p>
-						</div>
-						<div class="main-sp-cz"><a href="#">删除</a></div>
-					</div>
-					<div class="main-sp-03 clearfix">
-						<div class="img"><a href="#"><img src="images/d27d9dfb-5a8d-458e-aaad-9551a6d021ec_5t_235x297_90.jpg"></a></div>
-						<div class="main-sp-infor"><!-- 商品 -->
-							<span>自营</span><i></i>
-							<span><a href="#"> 飞利浦Philips口腔护理专场-【魔力触控感应手柄】飞利...</a></span>
-							<p>尺码:均码</p>
-						</div>
-						<div class="main-sp-price">
-							<p>¥399</p>
-							<p>¥569</p><!-- 价格 -->
-						</div>
-						<div class="main-sp-sl">
-							<div class="main-sp-num">
-								<span class="main-sp-minus" id="minus3">-</span>
-								<input type="text" value="1" id="input3"/>
-								<span class="main-sp-plus" id="plus3">+</span>
-							</div><!-- 数量 -->
-						</div>
-						<div class="main-sp-yh"><!-- 小计 -->
-							<p id="rSell3">¥ 339</p>
-							<p id="mSale3">已优惠 ¥60</p>
-						</div>
-						<div class="main-sp-cz"><a href="#">删除</a></div>
-					</div>
-				</div>
+						<div class="main-sp-cz" @click.stop="del(index)">删除</div>
+					</li>
+				</ul>
 				<div class="main-sp-yf">
 					<span>运费</span>
 					<span>唯品自营: 自营商品已免运费</span>
@@ -148,13 +100,13 @@
 					</div>
 					<div class="main-js-right fr">
 						<div class="main-right-r fr">
-							<p id="sumSell">¥947</p>
+							<p>¥{{sum()}}</p>
 							<p>-¥30</p>
-							<p id="sumSale">-¥169.6</p>
-							<p class="pink" id="sale">¥747.4</p>
+							<p id="sumSale">-¥{{sSum()}}</p>
+							<p class="pink">¥{{rSum()}}</p>
 						</div>
 						<div class="main-right-l fr">
-							<span>共<i class="pink" id="sumNum">3</i>件商品 商品金额</span>
+							<span>共<i class="pink" id="sumNum">{{sNum()}}</i>件商品 商品金额</span>
 							<span>优惠券优惠</span>
 							<span>活动优惠</span>
 							<span>总金额（未含运费）</span>
@@ -218,6 +170,7 @@
 			</p>
 		</div>
 	</footer>
+<script src="js/vue.js"></script>
 <script src="js/car.js"></script>
 </body>
 </html>
