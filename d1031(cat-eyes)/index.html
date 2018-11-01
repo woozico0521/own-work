@@ -5,10 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        
+        <div id="top">
+            猫眼电影
+        </div>
+        <div id="down">
+            <div class="sel">
+                <ul>
+                    <li>哈尔滨<img src="images/sj.png"></li>
+                    <li>北京</li>
+                    <li>上海</li>
+                    <li>杭州</li>
+                </ul>
+            </div>  
+            <div class="on">
+                正在热映
+            </div>
+            <div>
+                即将上映
+            </div>
+            <div>
+                <img src="images/搜索.png">
+            </div>
+        </div>
     </header>
+    
+    <main id="app">
+        <div>
+            <ul>
+                <li v-for="(movie, index) in movieList" :key="index">
+                    <div class="img">
+                        <img :src="movie.prc">
+                    </div>
+                    <div class="container">
+                        <div class="main">
+                            <dl>
+                                <dt><span class="movie-name">{{movie.name}}</span><img :src="movie.quality"></dt>
+                                <dd>观众评<span class="score">{{movie.score}}</span></dd>
+                                <dd>主演: {{movie.actor}}</dd>
+                                <dd>{{movie.time}}</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="sell">
+                        <p>购票</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">
+                    <img src="images/电影.png">
+                    <p>电影</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/影院1.png">
+                    <p>影院</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/我的1.png">
+                    <p>我的</p>
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+<script src="js/vue.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
