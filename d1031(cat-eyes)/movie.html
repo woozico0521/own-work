@@ -153,8 +153,132 @@
     </div>
 
     <div id="talk">
-        
+        <div class="talk-title">
+            短评
+        </div>
+        <div class="talk-con">
+            <ul>
+                <li>
+                    <div class="con-top">
+                        <img src="images/star.png">
+                        <img src="images/star.png">
+                        <img src="images/star.png">
+                        <img src="images/star.png">
+                        <img src="images/star.png">
+                        <span> 2016-03-25</span>
+                    </div>
+                    <div class="con-content">
+                        <p> 我特别喜欢反派，毒液是我最喜欢的反派，他也很帅，希望这部电影可以上映。</p>
+                    </div>
+                    <div class="con-down">
+                        <div class="con-user fl">
+                            <p class="user-name fl"><img src="images/user01.jpg"></p>
+                            <p class="user-id fl">sOH739772533</p>
+                        </div>
+                        <div class="con-like fr">
+                            <span><img src="images/like.png">7049</span>
+                            <span><img src="images/ans.png">186</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="con-top">
+                        未评分
+                        <span> 2015-07-09</span>
+                    </div>
+                    <div class="con-content">
+                        <p> 希望这部电影可以上映</p>
+                    </div>
+                    <div class="con-down">
+                        <div class="con-user fl">
+                            <p class="user-name fl"><img src="images/user02.jpg"></p>
+                            <p class="user-id fl">JayLee</p>
+                        </div>
+                        <div class="con-like fr">
+                            <span><img src="images/like.png">4114</span>
+                            <span><img src="images/ans.png">118</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="con-top">
+                        <img src="images/star.png">
+                        <img src="images/star.png">
+                        <img src="images/star.png">
+                        <img src="images/star.png">
+                        <img src="images/star-half-new.png">
+                        <span> 02-21</span>
+                    </div>
+                    <div class="con-content">
+                        <p> 汤老湿演的 又是漫威首部反派电影 期待 看预告挺惊悚的</p>
+                    </div>
+                    <div class="con-down">
+                        <div class="con-user fl">
+                            <p class="user-name fl"><img src="images/猫眼new.png"></p>
+                            <p class="user-id fl">PQB836417242</p>
+                        </div>
+                        <div class="con-like fr">
+                            <span><img src="images/like.png">2563</span>
+                            <span><img src="images/ans.png">94</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="talk-down">
+            <a href="#">
+                <span>查看全部</span>
+                <span>1061</span>
+                <span>条短评</span>
+            </a>
+        </div>
+
     </div>
+
+    <div id="parents">
+        <div class="fl parents-left">
+            <img src="images/baby.png">
+        </div>
+        <div class="parents-container">
+            <div class="parents-main fl">
+                <h5>家长引导</h5>
+                <p>本片在美国的评级为【PG-13】，未满13岁的儿童需在家长的陪同下观看。</p>
+            </div>
+        </div>
+        <div class="parents-right fr">
+            &gt;
+        </div>
+    </div>
+
+    <div id="more-movie">
+        <div class="more-title">
+            相关电影
+        </div>
+        <div class="more-con">
+            <ul>
+                <li v-for="(movie, index) in movieList" :key="index"><a href="#">
+                    <img :src="movie.pic">
+                    <p>{{movie.name}}</p>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="download">
+            下载猫眼电影，查看更多电影信息
+        </div>
+        <p class="copyright">
+            <span>©猫眼电影</span>
+            <span>客服电话:</span>
+            <span class="pink">1010-5335</span>
+        </p>
+        <p>
+            <span>京ICP备16022489号-1</span>
+            <span>京公网安备11010502030881号</span>
+        </p>
+        <p>北京猫眼文化传媒有限公司</p>
+    </footer>
 
 
 <script src="js/vue.js"></script>

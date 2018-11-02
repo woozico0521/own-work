@@ -112,3 +112,48 @@ let side = new Vue({
         ],
     },
 })
+
+
+let more = new Vue({
+    el:'#more-movie',
+    data:{
+        movieList:[
+            {
+                'pic':'images/newmutants.jpg',
+                'name':'X战警：新变种人',
+            },
+            {
+                'pic':'images/690fe6cf6136ff29ade8d0fc5ec161e974121.jpg',
+                'name':'蜘蛛侠：英雄远征',
+            },
+            {
+                'pic':'images/859783292328567a360c5ffb2e947228147746.jpg',
+                'name':'银河护卫队3',
+            },
+            {
+                'pic':'images/b349982a1c2bbf01407696e7d95066cb580557.jpg',
+                'name':'海王',
+            },
+            {
+                'pic':'images/99cfdd17abc95a9f544da3f9a3b26316204075.jpg',
+                'name':'X战警：黑凤凰',
+            },
+            {
+                'pic':'images/3669bbe4c1f2945b2e83bff9eeed332e142181.jpg',
+                'name':'黑寡妇',
+            },
+            {
+                'pic':'images/0607526181d31653e9b37b4b9f68bfcc129032.jpg',
+                'name':'正义联盟2',
+            },
+            {
+                'pic':'images/105a156788f15627b4c8618ad7913bd749438.jpg',
+                'name':'蝙蝠侠',
+            },
+            {
+                'pic':'images/45599c9d5c4c6323c7d821e07597773c67458.jpg',
+                'name':'钢骨',
+            },
+        ],
+    },
+})

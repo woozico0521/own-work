@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/buy.css">
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div class="container">
+                <div class="left">
+                    &lt;
+                </div>
+                <div class="title">
+                    毒液:致命守护者
+                </div>
+            </div>
+        </div>
+        <div id="down">
+            <div class="movie-pic fl">
+                <img src="images/363e3a7e614d29b2847ff4e62afcd3f42168651.jpg">
+            </div>
+            <div class="movie-container">
+                <div class="movie-info fl">
+                    <div class="name">
+                        <h2>毒液:致命守护者</h2>
+                        <h2>Venom</h2>
+                    </div>
+                    <div class="score">
+                        308025人想看
+                    </div>
+                    <div class="res">
+                        <ul>
+                            <li>
+                                <span class="type">动作,惊悚,科幻</span>
+                                <span><img src="images/imax1.png"></span>
+                            </li>
+                            <li>美国/107分钟</li>
+                            <li>2018-11-09大陆上映</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-more fr">
+                &gt;
+            </div>
+        </div>
+    </header>
+
+    <div id="dad">
+        <div id="time">
+            <div class="time-top">
+                <ul>
+                    <li class="on"><a href="#">
+                        周四11月08日
+                    </a></li>
+                    <li><a href="#">
+                        周五11月09日
+                    </a></li>
+                    <li><a href="#">
+                        周六11月10日
+                    </a></li>
+                    <li><a href="#">
+                        周日11月11日
+                    </a></li>
+                    <li><a href="#">
+                        周一11月12日
+                    </a></li>
+                    <li><a href="#">
+                        周二11月13日
+                    </a></li>
+                    <li><a href="#">
+                        周三11月14日
+                    </a></li>
+                    <li><a href="#">
+                        周四11月15日
+                    </a></li>
+                    <li><a href="#">
+                        周五11月16日
+                    </a></li>
+                    
+                </ul>
+            </div>
+            <div class="time-down">
+                <ul>
+                    <li>全城<img src="images/下三角.png"></li>
+                    <li>品牌<img src="images/下三角.png"></li>
+                    <li>特色<img src="images/下三角.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="place">
+        <ul>
+            <li v-for="(local, index) in localList" :key="index">
+                <div class="place-name">
+                    <span>{{local.name}}</span>
+                    <span class="price">{{local.price}}元起</span>
+                </div>
+                <div class="local">
+                    <span>{{local.site}}</span>
+                    <span class="distance fr">{{local.distance}}</span>
+                </div>
+                <div class="label-block">
+                    <p class="snack">{{local.snack}}</p>
+                    <p class="vipTag">{{local.vipTag}}</p>
+                    <p class="hallType">{{local.hallType1}}</p>
+                    <p class="hallType">{{local.hallType2}}</p>
+                    <p class="hallType">{{local.hallType3}}</p>
+                </div>
+                <div class="discount-block">
+                    <img :src="local.pic">
+                    {{local.discount}}
+                </div>
+                <div class="min-show">
+                    近期场次:{{local.minShow}}
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<script src="js/vue.js"></script>
+<script src="js/buy.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+let oTime = document.getElementById('dad');
+let oPlace = document.getElementById('place');
+window.addEventListener('scroll',function(e){
+    let t = document.documentElement.scrollTop || document.body.scrollTop;
+    if(t>200){
+        oTime.className="on";
+        oPlace.className="on";
+        console.log(oPlace)
+    }else{
+        oTime.className="";
+        oPlace.className="";
+    }
+})
+
+new Vue({
+    el:'#place',
+    data:{
+        localList:[
+            {
+                'name':'万达国际影城(哈西店)',
+                'price':'54.5',
+                'site':'南岗区哈西地区中兴大道与哈西大街交汇处万达广场3层（和谐大道交叉口）',
+                'distance':'1.6km',
+                'snack':'小吃',
+                'vipTag':'折扣卡',
+                'hallType1':'IMAX厅',
+                'hallType2':'RealD 6FL厅',
+                'hallType3':'儿童厅',
+                'discount':'限时¥29.9促销开卡，首单更优惠',
+                'pic':'images/card.png',
+                'minShow':'次日00:05',
+            },
+            {
+                'name':'中影国际影城(天悦国际店)',
+                'price':'34',
+                'site':'南岗区哈西大街12号天悦国际（居然之家三层）',
+                'distance':'2.9km',
+                'snack':'小吃',
+                'vipTag':'折扣卡',
+                'hallType1':'CGS中国巨幕厅',
+                'hallType2':'杜比全景声厅',
+                'hallType3':'巨幕厅',
+                'discount':'',
+                'pic':'',
+                'minShow':'次日00:00',
+            },
+            {
+                'name':'嘉星国际影城(学府店)',
+                'price':'28',
+                'site':'南岗区哈西商厦5层，禧合酒店侧门旁',
+                'distance':'3.3km',
+                'snack':'小吃',
+                'vipTag':'折扣卡',
+                'hallType1':'退',
+                'hallType2':'改签',
+                'hallType3':'儿童厅',
+                'discount':'开卡特惠，首单2张立减2元',
+                'pic':'images/card.png',
+                'minShow':'次日00:05',
+            },
+            {
+                'name':'嘉星国际影城(黑大店)',
+                'price':'30',
+                'site':'南岗区学府路51号哈尔滨服装城4层（地铁1号线黑龙江大学站1号出口即可）',
+                'distance':'3.5km',
+                'snack':'小吃',
+                'vipTag':'折扣卡',
+                'hallType1':'退',
+                'hallType2':'改签',
+                'hallType3':'儿童厅',
+                'discount':'开卡特惠，首单2张立减2元',
+                'pic':'images/card.png',
+                'minShow':'次日00:00',
+            },
+            {
+                'name':'CGV影城(学府店)',
+                'price':'42',
+                'site':'南岗区学府路1-1号凯德广场5楼（近哈师大附中）',
+                'distance':'4.5km',
+                'snack':'小吃',
+                'vipTag':'折扣卡',
+                'hallType1':'4DX厅',
+                'hallType2':'改签',
+                'hallType3':'儿童厅',
+                'discount':'',
+                'pic':'',
+                'minShow':'次日00:05 | 00:10',
+            },
+            {
+                'name':'华谊兄弟影院(群力店)',
+                'price':'35.9',
+                'site':'道里区群力第五大道王府井购物中心4层',
+                'distance':'5km',
+                'snack':'小吃',
+                'vipTag':'折扣卡',
+                'hallType1':'退',
+                'hallType2':'改签',
+                'hallType3':'儿童厅',
+                'discount':'',
+                'pic':'',
+                'minShow':'次日00:05 | 00:10',
+            },
+            {
+                'name':'恒大影城(群力店)',
+                'price':'35',
+                'site':'道里区群力第四大道与景江东路交口恒大国际中心影城2层',
+                'distance':'5.6km',
+                'snack':'小吃',
+                'vipTag':'折扣卡',
+                'hallType1':'CGS中国巨幕厅',
+                'hallType2':'杜比全景声厅',
+                'hallType3':'DTS:X 临境音厅',
+                'discount':'开卡特惠，首单2张立减2元',
+                'pic':'images/card.png',
+                'minShow':'次日00:00 | 00:05',
+            },
+            {
+                'name':'CGV影城(群力店)',
+                'price':'33',
+                'site':'道里区群力第四大道1553号A2-30（灵江路侧）',
+                'distance':'5.6km',
+                'snack':'小吃',
+                'vipTag':'折扣卡',
+                'hallType1':'4K厅',
+                'hallType2':'杜比全景声厅',
+                'hallType3':'DTS:X 临境音厅',
+                'discount':'',
+                'pic':'',
+                'minShow':'次日00:05 | 00:10',
+            },
+            {
+                'name':'万达影城(群力财富广场店)',
+                'price':'44.5',
+                'site':'道里区群力大道与兴江路交口群力财富中心四层万达影城',
+                'distance':'5.6km',
+                'snack':'小吃',
+                'vipTag':'折扣卡',
+                'hallType1':'CGS中国巨幕厅',
+                'hallType2':'杜比全景声厅',
+                'hallType3':'DTS:X 临境音厅',
+                'discount':'开卡特惠，首单2张立减2元',
+                'pic':'images/card.png',
+                'minShow':'次日00:05',
+            },
+        
+        ],
+    },
+})
