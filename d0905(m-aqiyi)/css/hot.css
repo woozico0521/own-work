@@ -36,8 +36,8 @@ main ul li div.video-down div.video-left .video-per img:last-child{width: 16px;p
 main ul li div.video-down div.video-left span{font-size: 10px;}
 main ul li div.video-down div.video-left span.video-middle{color: #E2E2E2;}
 main ul li div.video-down div.video-left span.video-follow{color: #20bc22;}
-main ul li div.video-down div.video-right{width: 50%;}
-main ul li div.video-down div.video-right .video-handle{width: 30px;height: 30px;display:inline-block; background: url(../images/player-handle-20180118.png) no-repeat ;}
+main ul li div.video-down div.video-right{width: 50%;height: 40px;line-height: 40px;}
+main ul li div.video-down div.video-right .video-handle{width: 30px;height: 30px;display:inline-block; background: url(../images/player-handle-20180118.png) no-repeat;background-size: cover;}
 
 
 
