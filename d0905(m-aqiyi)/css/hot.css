@@ -4,6 +4,8 @@ a{text-decoration: none;}
 a:hover{text-decoration: none;}
 i{font-style: normal;}
 body{width: 100%;height: 100%;}
+.fl{float: left;}
+.fr{float: right;}
 
 
 
@@ -26,11 +28,14 @@ main{width: 100%;margin-top:55px;}
 main ul{width: 100%;}
 main ul li{width: 100%;position: relative;}
 main ul li video{width: 100%;}
-main ul li div.video-down{width: 100%;height: 60px;border-bottom:10px solid #E2E2E2;}
-main ul li div.video-down div.video-left{width: 50%;}
-main ul li div.video-down div.video-left .video-per{width: 50px;}
-
-
+main ul li div.video-down{width: 100%;height: 40px;border-bottom:10px solid #E2E2E2;line-height:40px;}
+main ul li div.video-down div.video-left{width: 50%;position: relative;height: 40px;}
+main ul li div.video-down div.video-left .video-per{width: 30px;height: 30px;overflow: hidden;border-radius:50px;margin:3px 10px 0 10px;}
+main ul li div.video-down div.video-left .video-per img:first-child{width: 100%;}
+main ul li div.video-down div.video-left .video-per img:last-child{width: 16px;position: absolute;left:30px;bottom:3px;background: #fff;border-radius: 16px}
+main ul li div.video-down div.video-left span{font-size: 10px;}
+main ul li div.video-down div.video-left span.video-middle{color: #E2E2E2;}
+main ul li div.video-down div.video-left span.video-follow{color: #20bc22;}
 
 
 
